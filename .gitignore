@@ -1,0 +1,15 @@
+crash-reports/*
+downloads
+local
+logs
+mods
+resourcepacks
+saves
+schematics
+shaderpacks
+skyblock_exports
+knownkeys.txt
+minecraftinstance.json
+patchouli_data.json
+rhino.local.properties
+usercache.jsonuseramecache.json

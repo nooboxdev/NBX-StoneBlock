@@ -1,0 +1,29 @@
+{
+  // The template which will be used for spawn only
+  // Example: 
+  // {
+  //     "name": "default",
+  //     "desc": "",
+  //     "file": "default.nbt",
+  //     "spawns": "default",
+  //     "direction": "south"
+  // }
+  "spawn": null,
+  
+  "spawns": {
+    "default": [
+      [ 5, 1, 1 ]
+    ]
+  },
+  
+  // The list of templates being available. The first entry is the default template.
+  "templates": [
+    {
+      "name": "Stoneblock",
+      "desc": "",
+      "file": "stoneblock.nbt",
+      "spawns": "default",
+      "direction": "south"
+    }
+  ]
+}

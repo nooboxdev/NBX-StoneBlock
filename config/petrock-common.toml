@@ -1,0 +1,18 @@
+
+#WorldGen Settings
+[worldgen]
+	#World Gen? [DEFAULT: true]
+	worldgen_enabled = true
+	#Size of a Vain [DEFAULT: 10]
+	#Range: 1 ~ 50
+	stoneium_ore_vain_size = 10
+	#The Amount of Vains for a chunk [DEFAULT: 30]
+	#Range: 0 ~ 100
+	stoneium_ore_vain_amount = 30
+	#Size of a Vain [DEFAULT: 10]
+	#Range: 1 ~ 50
+	deepslate_stoneium_ore_vain_size = 10
+	#The Amount of Vains for a chunk [DEFAULT: 15]
+	#Range: 0 ~ 100
+	deepslate_stoneium_ore_vain_amount = 15
+
