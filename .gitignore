@@ -12,4 +12,5 @@ knownkeys.txt
 minecraftinstance.json
 patchouli_data.json
 rhino.local.properties
-usercache.jsonuseramecache.json
+usercache.json
+useramecache.json
