@@ -18,10 +18,42 @@ onEvent('recipes', event => {
 	event.shapeless('minecraft:crafting_table', ['tconstruct:crafting_station'])
 })
 
-onEvent('item.tags', event => {
-	// Get the #forge:cobblestone tag collection and add Diamond Ore to it
-	// event.get('forge:cobblestone').add('minecraft:diamond_ore')
-
-	// Get the #forge:cobblestone tag collection and remove Mossy Cobblestone from it
-	// event.get('forge:cobblestone').remove('minecraft:mossy_cobblestone')
+onEvent('block.loot_tables', event => {
+  // all dirt blocks have a 50% chance to drop an enchanted diamond sword named "test"
+  event.modifyBlock('minecraft:stone', table => {
+    table.addPool(pool => {
+      pool.addItem('minecraft:coal_ore').randomChance(0.1)
+      pool.addItem('minecraft:iron_ore').randomChance(0.1)
+      pool.addItem('minecraft:copper_ore').randomChance(0.1)
+      pool.addItem('minecraft:gold_ore').randomChance(0.1)
+      pool.addItem('minecraft:redstone_ore').randomChance(0.1)
+      pool.addItem('minecraft:emerald_ore').randomChance(0.1)
+      pool.addItem('minecraft:lapis_ore').randomChance(0.1)
+      pool.addItem('minecraft:diamond_ore').randomChance(0.1)
+      pool.addItem('minecraft:nether_quartz_ore').randomChance(0.1)
+      pool.addItem('ae2:quartz_ore').randomChance(0.1)
+      pool.addItem('create:zinc_ore').randomChance(0.1)
+      pool.addItem('forbidden_arcanus:xpetrified_ore').randomChance(0.1)
+      pool.addItem('forbidden_arcanus:arcane_crystal_ore').randomChance(0.1)
+      pool.addItem('forbidden_arcanus:runic_stone').randomChance(0.1)
+      pool.addItem('thermal:nickel_ore').randomChance(0.1)
+      pool.addItem('thermal:silver_ore').randomChance(0.1)
+      pool.addItem('thermal:sulfur_ore').randomChance(0.1)
+      pool.addItem('thermal:niter_ore').randomChance(0.1)
+      pool.addItem('thermal:cinnabar_ore').randomChance(0.1)
+      pool.addItem('thermal:apatite_ore').randomChance(0.1)
+      pool.addItem('rftoolsbase:dimensionalshard_overworld').randomChance(0.1)
+      pool.addItem('mekanism:lead_ore').randomChance(0.1)
+      pool.addItem('mekanism:fluorite_ore').randomChance(0.1)
+      pool.addItem('mekanism:uranium_ore').randomChance(0.1)
+      pool.addItem('mekanism:osmium_ore').randomChance(0.1)
+      pool.addItem('mekanism:tin_ore').randomChance(0.1)
+	  
+      pool.addItem('minecraft:andesite').randomChance(0.1)
+      pool.addItem('minecraft:diorite').randomChance(0.1)
+      pool.addItem('minecraft:granite').randomChance(0.1)
+      pool.addItem('minecraft:tuff').randomChance(0.1)
+      pool.addItem('minecraft:deepslate').randomChance(0.1)
+    })
+  })
 })

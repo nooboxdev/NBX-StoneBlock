@@ -211,5 +211,55 @@
 				}
 			}]
 		}
+		{
+			x: -3.0d
+			y: -4.5d
+			id: "1B6B2249E0512DF0"
+			tasks: [{
+				id: "3D3A767EA7590307"
+				type: "item"
+				item: "exnihilosequentia:flint_mesh"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -5.5d
+			id: "075442185713811C"
+			tasks: [{
+				id: "183D528D238A544E"
+				type: "item"
+				item: "exnihilosequentia:iron_mesh"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -6.5d
+			id: "7EDBEDA66B5AC6FB"
+			tasks: [{
+				id: "7F4868AFC92D9DE2"
+				type: "item"
+				item: "exnihilosequentia:diamond_mesh"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -7.5d
+			id: "7B1119C99A25553D"
+			tasks: [{
+				id: "58C8BEAC616B938D"
+				type: "item"
+				item: "exnihilosequentia:emerald_mesh"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -8.5d
+			id: "3ED28B5BA60CFDA1"
+			tasks: [{
+				id: "7F6BA05435D01AEF"
+				type: "item"
+				item: "exnihilosequentia:netherite_mesh"
+			}]
+		}
 	]
 }
