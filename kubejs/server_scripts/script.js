@@ -10,12 +10,43 @@ console.info('Hello, World! (You will see this line every time server resources 
 onEvent('recipes', event => {
 	event.remove({output: 'minecraft:crafting_table'})
 	event.remove({output: 'tconstruct:crafting_station'})
+	event.remove({id: 'create:milling/gravel'})
+	event.remove({id: 'create:milling/sandstone'})
+	
 	
 	
 	
 	event.shapeless('tconstruct:crafting_station', ['4x #minecraft:planks'])
 	event.shapeless('tconstruct:crafting_station', ['minecraft:crafting_table'])
 	event.shapeless('minecraft:crafting_table', ['tconstruct:crafting_station'])
+	
+	event.recipes.createMilling('minecraft:sand', 'minecraft:gravel')
+	
+	
+	
+	event.shaped('watercondenser:watercondenser', [
+    'SSS',
+    'SAS',
+    'SSS'
+  ], {
+    S: '#minecraft:logs',
+    A: '#minecraft:leaves'
+  })
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 })
 
 onEvent('block.loot_tables', event => {
@@ -57,3 +88,20 @@ onEvent('block.loot_tables', event => {
     })
   })
 })
+
+onEvent("block.right_click", (event) => {
+  const { block, hand, item, world, player } = event;
+  if (hand.name() != "MAIN_HAND") return;
+
+  if (item == "create:wrench" && player.isCrouching()) {
+    if (block.equals("minecraft:end_portal_frame")) {
+      const hasEnderEye = block.properties.eye;
+      block.set("minecraft:air");
+      player.give("minecraft:end_portal_frame");
+      if (hasEnderEye == "true") {
+        player.give("minecraft:ender_eye");
+      }
+    }
+  }
+
+});

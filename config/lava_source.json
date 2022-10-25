@@ -1,0 +1,56 @@
+{
+  "lava_source": "set the value",
+  "version": "1.0",
+  "source_blocks": {
+    "torch": {
+      "enabled": true,
+      "block tag": "forge:torch/normal",
+      "power": "3"
+    },
+    "soul_torch": {
+      "enabled": true,
+      "block tag": "forge:torch/soul",
+      "power": "6"
+    },
+    "lava": {
+      "enabled": true,
+      "block tag": "minecraft:lava",
+      "power": "10"
+    },
+    "magma": {
+      "enabled": true,
+      "block tag": "minecraft:magma",
+      "power": "8"
+    },
+    "campfires": {
+      "enabled": true,
+      "block tag": "minecraft:campfires/normal",
+      "power": "5"
+    },
+    "campfires_soul": {
+      "enabled": true,
+      "block tag": "minecraft:campfires/soul",
+      "power": "10"
+    },
+    "fire": {
+      "enabled": true,
+      "block tag": "minecraft:fire/normal",
+      "power": "4"
+    },
+    "soul_fire": {
+      "enabled": true,
+      "block tag": "minecraft:fire/soul",
+      "power": "8"
+    },
+    "new1": {
+      "enabled": false,
+      "block tag": "minecraft:beacon",
+      "power": "25"
+    },
+    "new2": {
+      "enabled": false,
+      "block tag": "forge:cobblestone",
+      "power": "1"
+    }
+  }
+}

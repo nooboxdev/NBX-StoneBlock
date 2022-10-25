@@ -11,3 +11,13 @@ onEvent('block.registry', event => {
 	// Register new blocks here
 	// event.create('example_block').material('wood').hardness(1.0).displayName('Example Block')
 })
+
+onForgeEvent('net.minecraftforge.event.world.BlockEvent$PortalSpawnEvent', event => {
+  event.setCanceled(true)
+})
+
+onEvent('item.modification', event => {
+	event.modify('minecraft:egg', item => {item.maxStackSize = 64})
+	event.modify('minecraft:ender_pearl', item => {item.maxStackSize = 64})
+	event.modify('minecraft:snowball', item => {item.maxStackSize = 64})
+})

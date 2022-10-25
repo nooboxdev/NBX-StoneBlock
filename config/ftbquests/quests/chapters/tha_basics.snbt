@@ -1,0 +1,399 @@
+{
+	id: "1B8BE52235BF0B37"
+	group: "4C76B411E29FCDA6"
+	order_index: 0
+	filename: "tha_basics"
+	title: "The Basics"
+	icon: "minecraft:stone"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -6.0d
+			y: -4.0d
+			id: "73E94C8E21F112AF"
+			tasks: [{
+				id: "0C7B073C2F1D55D4"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "58F392EDC474B2DD"
+					type: "item"
+					item: "minecraft:oak_sapling"
+				}
+				{
+					id: "70CEB0A543445F52"
+					type: "item"
+					item: "minecraft:spruce_sapling"
+				}
+				{
+					id: "2863BBDB9D41F27E"
+					type: "item"
+					item: "minecraft:birch_sapling"
+				}
+				{
+					id: "6B09DE986014AD64"
+					type: "item"
+					item: "minecraft:jungle_sapling"
+				}
+				{
+					id: "60E52D12FA80D288"
+					type: "item"
+					item: "minecraft:dark_oak_sapling"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			id: "2DAFD65475F50CA1"
+			tasks: [{
+				id: "587C4E6C268F78A6"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 64L
+			}]
+		}
+		{
+			x: -6.0d
+			y: -1.0d
+			dependencies: [
+				"73E94C8E21F112AF"
+				"63B8E9C0D1F76E86"
+			]
+			id: "25EA0DBF02EEAD93"
+			tasks: [{
+				id: "44A928E46961D522"
+				type: "item"
+				item: "watercondenser:watercondenser"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -2.5d
+			dependencies: ["73E94C8E21F112AF"]
+			id: "219D47856AB5EA4B"
+			tasks: [
+				{
+					id: "5657099B2CE82E29"
+					type: "item"
+					title: "Any #forge:workbenches"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:workbenches"
+						}
+					}
+				}
+				{
+					id: "30A1571FDF1DAFD1"
+					type: "item"
+					item: {
+						id: "tconstruct:tinker_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+				{
+					id: "1CB9787FD332BB2C"
+					type: "item"
+					item: {
+						id: "tconstruct:part_builder"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1F56D75E2CB0CFCF"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 12
+			}]
+		}
+		{
+			x: -7.0d
+			y: -2.5d
+			dependencies: ["73E94C8E21F112AF"]
+			id: "5F88484369FA2AE7"
+			tasks: [{
+				id: "2AAFD516B9946D1C"
+				type: "item"
+				item: {
+					id: "woodenbucket:wooden_bucket"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "776A959156464777"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.5d
+			dependencies: ["73E94C8E21F112AF"]
+			id: "63B8E9C0D1F76E86"
+			tasks: [{
+				id: "05049CE3F37F1F4A"
+				type: "item"
+				item: {
+					id: "woodenshears:wooden_shears"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.5d
+			dependencies: ["2DAFD65475F50CA1"]
+			id: "68D592DE22997035"
+			tasks: [{
+				id: "16429D0A1292075E"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.5d
+			dependencies: ["68D592DE22997035"]
+			id: "132BC0B723ED697E"
+			tasks: [{
+				id: "387E668CFF30D629"
+				type: "item"
+				item: "ironfurnaces:iron_furnace"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -0.5d
+			dependencies: ["132BC0B723ED697E"]
+			id: "6058423E26B58EC5"
+			tasks: [{
+				id: "393DC2DB3E9579D0"
+				type: "item"
+				item: "ironfurnaces:gold_furnace"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			dependencies: ["6058423E26B58EC5"]
+			id: "394F5803ED55A4E5"
+			tasks: [{
+				id: "6C93E7D7EE8492DD"
+				type: "item"
+				item: "ironfurnaces:diamond_furnace"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			dependencies: ["394F5803ED55A4E5"]
+			id: "5F5BACF222DB2EB2"
+			tasks: [{
+				id: "1071A6CB13DBD3D7"
+				type: "item"
+				item: "ironfurnaces:emerald_furnace"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.5d
+			dependencies: ["5F5BACF222DB2EB2"]
+			id: "29B25DD123662E8E"
+			tasks: [{
+				id: "59CE46365A2A2EF8"
+				type: "item"
+				item: "ironfurnaces:obsidian_furnace"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.5d
+			dependencies: ["29B25DD123662E8E"]
+			id: "2A07A57826E966AD"
+			tasks: [{
+				id: "411F9C35C5FE43D0"
+				type: "item"
+				item: "ironfurnaces:netherite_furnace"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.5d
+			dependencies: ["2DAFD65475F50CA1"]
+			id: "03D71CC95054D761"
+			tasks: [{
+				id: "6A11B2201F7C0E18"
+				type: "item"
+				item: "irongenerators:stone_generator"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			dependencies: ["03D71CC95054D761"]
+			id: "0D1064D2052FBCEE"
+			tasks: [{
+				id: "70A7BCF002023C4E"
+				type: "item"
+				item: "irongenerators:iron_generator"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			dependencies: ["0D1064D2052FBCEE"]
+			id: "102AE86A25CBA9D6"
+			tasks: [{
+				id: "2D2B4C8BEE111639"
+				type: "item"
+				item: "irongenerators:gold_generator"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.5d
+			dependencies: ["102AE86A25CBA9D6"]
+			id: "33E6EE3ED8B1C461"
+			tasks: [{
+				id: "09FF9E39FF026CD4"
+				type: "item"
+				item: "irongenerators:diamond_generator"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			dependencies: ["33E6EE3ED8B1C461"]
+			id: "33BAF0B928698C80"
+			tasks: [{
+				id: "10C37E05E10F3099"
+				type: "item"
+				item: "irongenerators:obsidian_generator"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.5d
+			dependencies: ["33BAF0B928698C80"]
+			id: "4E551BEDED547370"
+			tasks: [{
+				id: "2ABB9743117C1E62"
+				type: "item"
+				item: "irongenerators:netherite_generator"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			dependencies: ["2DAFD65475F50CA1"]
+			id: "3463A3F236DD9A14"
+			tasks: [{
+				id: "670DC6D9381F6F2C"
+				type: "item"
+				item: "lava_source:stone_lava_source_furnace"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			dependencies: ["3463A3F236DD9A14"]
+			id: "595C5A9BDE5FEE24"
+			tasks: [{
+				id: "2C7492A5C7E266F2"
+				type: "item"
+				item: "lava_source:iron_lava_source_furnace"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			dependencies: ["595C5A9BDE5FEE24"]
+			id: "2C213EFD3E7BFE13"
+			tasks: [{
+				id: "48AAC923C336C329"
+				type: "item"
+				item: "lava_source:gold_lava_source_furnace"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			dependencies: ["2C213EFD3E7BFE13"]
+			id: "139710F2683AE260"
+			tasks: [{
+				id: "5F868FE8F8144CFB"
+				type: "item"
+				item: "lava_source:diamond_lava_source_furnace"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["139710F2683AE260"]
+			id: "36913A0E578E7889"
+			tasks: [{
+				id: "460CD0A4736EDE75"
+				type: "item"
+				item: "lava_source:netherite_lava_source_furnace"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 5.5d
+			subtitle: "automatize generator and processor"
+			id: "6F679466E151485A"
+			tasks: [{
+				id: "58722B0082DC2510"
+				type: "checkmark"
+				title: "Automatize Resorces"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 5.5d
+			subtitle: "Automatize the kelp farm"
+			id: "4042E6EAB99A3809"
+			tasks: [{
+				id: "30B71D387BC3486E"
+				type: "checkmark"
+				title: "Kelp farm"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			id: "3F49559D155BB60F"
+			tasks: [{
+				id: "10C8CFC4A49C22C0"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+	]
+}

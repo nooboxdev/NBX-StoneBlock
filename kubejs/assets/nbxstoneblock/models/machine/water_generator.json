@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+    	"north": "nbxstoneblock:block/machine_water_generator",
+    	"east": "nbxstoneblock:block/machine_side",
+    	"south": "nbxstoneblock:block/machine_side",
+    	"west": "nbxstoneblock:block/machine_side",
+    	"up": "nbxstoneblock:block/machine_top",
+    	"down": "nbxstoneblock:block/machine_top",
+    	"particle": "nbxstoneblock:block/machine_water_generator"
+    }
+}

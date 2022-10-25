@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+    	"north": "nbxstoneblock:block/bedrock_infuser",
+    	"east": "nbxstoneblock:block/bedrock_infuser",
+    	"south": "nbxstoneblock:block/bedrock_infuser",
+    	"west": "nbxstoneblock:block/bedrock_infuser",
+    	"up": "nbxstoneblock:block/machine_top",
+    	"down": "nbxstoneblock:block/machine_top",
+    	"particle": "nbxstoneblock:block/bedrock_infuser"
+    }
+}

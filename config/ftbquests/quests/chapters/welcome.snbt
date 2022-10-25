@@ -1,0 +1,96 @@
+{
+	id: "22BC9DB2CB16ED69"
+	group: ""
+	order_index: 0
+	filename: "welcome"
+	title: "Welcome!"
+	icon: "morevanillalib:paper_bundle"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -9.5d
+			y: -6.0d
+			description: ["Welcome to NBXStoneBlock, a modpack where you are born in a cave and must survive from there."]
+			id: "52194243D4C8A4C0"
+			tasks: [{
+				id: "3CE8A1CA3018FF27"
+				type: "checkmark"
+				title: "Welcome"
+			}]
+			rewards: [{
+				id: "5AE904A63344C8F8"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -8.0d
+			y: -5.5d
+			description: ["By breaking stone, you get ores, boulder, andesite, etc."]
+			dependencies: ["52194243D4C8A4C0"]
+			id: "31C97F3C234C1853"
+			tasks: [{
+				id: "6DD5A73779767B5E"
+				type: "checkmark"
+				title: "Resources"
+			}]
+			rewards: [
+				{
+					id: "4F07102F6EB6AFFF"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "502FC08CBF56A9BE"
+					type: "item"
+					item: {
+						id: "minecraft:stone_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Unbreakable: 1b
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -5.5d
+			subtitle: "Tempad"
+			description: ["Tempad opens portals, with him you can move faster inside your base"]
+			dependencies: ["31C97F3C234C1853"]
+			id: "28BD7AE83F18F55F"
+			tasks: [{
+				id: "7F55F8F5D40E1C2C"
+				type: "checkmark"
+				title: "Teleportation"
+			}]
+			rewards: [{
+				id: "3D8AFA7B9ED73F7F"
+				type: "item"
+				item: "tempad:tempad"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -5.0d
+			subtitle: "Vein Miner - Excavete - FTB Ultimine"
+			description: ["using the \"grave\" key by default, you can mine up to 64 blocks"]
+			dependencies: ["28BD7AE83F18F55F"]
+			id: "26F922621B67674A"
+			tasks: [{
+				id: "5A902C611A344D68"
+				type: "checkmark"
+				title: "Excavete"
+			}]
+			rewards: [{
+				id: "41FA8C665DF10BED"
+				type: "item"
+				item: "minecraft:cookie"
+				count: 16
+			}]
+		}
+	]
+}
