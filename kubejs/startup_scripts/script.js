@@ -10,7 +10,28 @@ onEvent('item.registry', event => {
 onEvent('block.registry', event => {
 	// Register new blocks here
 	// event.create('example_block').material('wood').hardness(1.0).displayName('Example Block')
+	event.create('dust').material('sand').hardness(1.0).displayName('Dust')
 })
+
+
+
+
+onEvent('fluid.registry', event => {
+// These first examples are 1.16.5 and 1.18.2 syntax
+				
+/* Basic "thin" (looks like water) fluid with cyan tint, has no bucket and is not placeable
+	event.create('ore_water')
+	.thinTexture(0xA87883)
+	.bucketColor(0xA87883)
+	.displayName('Ore Water')
+	.noBucket() // both these methods are 1.18.2+ only
+	.noBlock() 
+*/
+})
+
+
+
+
 
 onForgeEvent('net.minecraftforge.event.world.BlockEvent$PortalSpawnEvent', event => {
   event.setCanceled(true)

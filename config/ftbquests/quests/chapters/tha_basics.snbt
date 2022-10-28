@@ -63,6 +63,12 @@
 				item: "minecraft:cobblestone"
 				count: 64L
 			}]
+			rewards: [{
+				id: "69393AB56D8A1690"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 32
+			}]
 		}
 		{
 			x: -6.0d
@@ -76,6 +82,12 @@
 				id: "44A928E46961D522"
 				type: "item"
 				item: "watercondenser:watercondenser"
+			}]
+			rewards: [{
+				id: "50D9486C4397A037"
+				type: "item"
+				item: "minecraft:egg"
+				count: 16
 			}]
 		}
 		{
@@ -388,11 +400,147 @@
 		{
 			x: 0.5d
 			y: -4.0d
+			dependencies: ["2DAFD65475F50CA1"]
 			id: "3F49559D155BB60F"
 			tasks: [{
 				id: "10C8CFC4A49C22C0"
 				type: "item"
 				item: "minecraft:gravel"
+			}]
+			rewards: [{
+				id: "7966B731D61E4728"
+				type: "item"
+				item: "minecraft:gravel"
+				count: 64
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.0d
+			dependencies: ["3F49559D155BB60F"]
+			id: "517318D431EDB7A2"
+			tasks: [{
+				id: "751437A814ED3A45"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+			rewards: [{
+				id: "323C380A007FE9C4"
+				type: "item"
+				item: "minecraft:sand"
+				count: 64
+			}]
+		}
+		{
+			x: 6.5d
+			y: -4.0d
+			dependencies: ["517318D431EDB7A2"]
+			id: "15456270A4F52DD3"
+			tasks: [{
+				id: "150259ECDA730C48"
+				type: "item"
+				item: "kubejs:dust"
+			}]
+			rewards: [{
+				id: "2166FB0912A9E3B8"
+				type: "item"
+				item: "kubejs:dust"
+				count: 64
+			}]
+		}
+		{
+			x: 3.5d
+			y: -5.5d
+			dependencies: ["517318D431EDB7A2"]
+			id: "3E49C662034CD3FE"
+			tasks: [{
+				id: "71A2B93DC08D1CAE"
+				type: "item"
+				item: "minecraft:soul_sand"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			dependencies: ["3F49559D155BB60F"]
+			id: "53BB99CA1517E14E"
+			tasks: [{
+				id: "026287086C767446"
+				type: "item"
+				title: "Any #forge:raw_materials"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:raw_materials"
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			dependencies: ["517318D431EDB7A2"]
+			id: "030EC718167D9D91"
+			tasks: [
+				{
+					id: "73DC556CD264C46E"
+					type: "item"
+					item: "minecraft:redstone"
+				}
+				{
+					id: "4D2E3F097D616C1B"
+					type: "item"
+					item: "minecraft:glowstone_dust"
+				}
+				{
+					id: "50CB2FEDC2ABC3D4"
+					type: "item"
+					item: "ae2:fluix_dust"
+				}
+				{
+					id: "11BF4CD2DE81F2DF"
+					type: "item"
+					item: "minecraft:bone_meal"
+				}
+				{
+					id: "7888BFE845B15660"
+					type: "item"
+					item: "ae2:sky_dust"
+				}
+				{
+					id: "576BB7E1B8A49CD8"
+					type: "item"
+					item: "minecraft:blaze_powder"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -2.5d
+			dependencies: ["15456270A4F52DD3"]
+			id: "6F02DB5B234E1C7A"
+			tasks: [
+				{
+					id: "114AAAF52EA79967"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+				}
+				{
+					id: "33209EE3A497963C"
+					type: "item"
+					item: "minecraft:ghast_tear"
+				}
+				{
+					id: "534F7DE68E54C277"
+					type: "item"
+					item: "minecraft:nether_wart"
+				}
+			]
+			rewards: [{
+				id: "07AE31C8480B013C"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]

@@ -234,8 +234,9 @@ tconstruct:ender_slime_island_tree
 tconstruct:blood_slime_fungus
 tconstruct:blood_slime_island_fungus
 tconstruct:ichor_slime_fungus
-minecraft:ore_stoneium
-minecraft:ore_stoneium_deepslate
+waystones:waystone
+waystones:mossy_waystone
+waystones:sandy_waystone
 forbidden_arcanus:ore_arcane_crystal
 forbidden_arcanus:ore_rune
 forbidden_arcanus:ore_darkstone

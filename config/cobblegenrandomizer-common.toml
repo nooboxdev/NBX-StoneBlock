@@ -14,7 +14,7 @@
 		#Stone gen
 		block_list_stone = ["minecraft:stone|100"]
 		#Basalt gen
-		block_list_basalt = ["minecraft:basalt|60", "minecraft:blackstone|60", "minecraft:netherrack|60", "minecraft:nether_quartz_ore|30", "minecraft:nether_gold_ore|30", "minecraft:ancient_debris|1"]
+		block_list_basalt = ["minecraft:basalt|60", "minecraft:blackstone|60", "minecraft:netherrack|60"]
 
 		#Custom settings
 		[general.lists.custom]

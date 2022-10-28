@@ -1,7 +1,7 @@
 
 ["Configs for WaterCondenser"]
 	#Tank capacity in mB
-	"Condenser capacity" = 1000
+	"Condenser capacity" = 10000
 	#mB per tick increment
 	"Fluid per tick" = 2
 
