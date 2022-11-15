@@ -103,7 +103,7 @@
       "itemID": "minecraft:black_dye"
     },
     "drop_item": {
-      "itemID": "minecraft:black_dye"
+      "itemID": "minecraft:ink_sac"
     },
     "spawn_type": "NONE",
     "parent_1": "",

@@ -11,8 +11,6 @@ onEvent('recipes', event => {
 	event.remove({output: 'minecraft:crafting_table'})
 	event.remove({output: 'tconstruct:crafting_station'})
 	event.remove({output: 'thermal:machine_chiller'})
-	event.remove({output: 'mob_grinding_utils:nutritious_chicken_feed'})
-	event.remove({output: 'mob_grinding_utils:gm_chicken_feed_cursed'})
 	event.remove({output: 'create:propeller'})
 	
 	
@@ -127,32 +125,16 @@ onEvent('recipes', event => {
 	event.recipes.thermal.press('minecraft:bone', '3x minecraft:bone_meal')
 	
 	event.shaped('watercondenser:watercondenser', [
-    'SSS',
+    'BBB',
     'SAS',
     'SSS'
   ], {
     S: '#minecraft:logs',
-    A: '#minecraft:leaves'
+    A: Item.of('woodenbucket:wooden_bucket', '{Damage:0}'),
+    B: '#minecraft:leaves'
   })
 
 
-  event.shaped('mob_grinding_utils:golden_egg', [
-    'SSS',
-    'SAS',
-    'SSS'
-  ], {
-    S: 'minecraft:gold_block',
-    A: 'minecraft:egg'
-  })
-
-  event.shaped('mob_grinding_utils:rotten_egg', [
-    'SSS',
-    'SAS',
-    'SSS'
-  ], {
-    S: 'minecraft:rotten_flesh',
-    A: 'minecraft:egg'
-  })
   
 	event.shaped('create:cogwheel', [
 	'SSS',
@@ -184,6 +166,50 @@ onEvent('recipes', event => {
     A: 'minecraft:furnace',
     B: 'minecraft:smooth_stone'
   })
+
+//recipe for chickens
+
+event.shaped(Item.of('chickens:chicken_item', '{ChickenType:{id:"chickens:flint_chicken"}}'), [
+  'SSS',
+  'SAS',
+  'SSS'
+], {
+  S: 'minecraft:flint',
+  A: 'minecraft:egg'
+})
+
+event.shaped(Item.of('chickens:chicken_item', '{ChickenType:{id:"chickens:quartz_chicken"}}'), [
+  'SSS',
+  'SAS',
+  'SSS'
+], {
+  S: 'minecraft:quartz',
+  A: 'minecraft:egg'
+})
+
+event.shaped(Item.of('chickens:chicken_item', '{ChickenType:{id:"chickens:sand_chicken"}}'), [
+  'SSS',
+  'SAS',
+  'SSS'
+], {
+  S: 'minecraft:sand',
+  A: 'minecraft:egg'
+})
+
+event.shaped(Item.of('chickens:chicken_item', '{ChickenType:{id:"chickens:log_chicken"}}'), [
+  'SSS',
+  'SAS',
+  'SSS'
+], {
+  S: '#minecraft:logs',
+  A: 'minecraft:egg'
+})
+
+
+
+
+
+
 
 
 
