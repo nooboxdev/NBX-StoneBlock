@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Oct 18, 2022, 10:36:19 PM
+To refresh this file, delete it and run /reload command again! Last updated: Nov 14, 2022, 9:55:52 PM
 
 #minecraft:axolotl_always_hostiles
 - minecraft:drowned
@@ -16,6 +16,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Oct
 
 #ars_nouveau:spell_can_hit
 
+#carryon:stacking_whitelist
+
 #tconstruct:rare_mobs
 - minecraft:wither
 - minecraft:ender_dragon
@@ -23,9 +25,23 @@ To refresh this file, delete it and run /reload command again! Last updated: Oct
 - minecraft:evoker
 - minecraft:player
 
+#botania:cocoon/common
+- minecraft:pig
+- minecraft:cow
+- minecraft:chicken
+- minecraft:rabbit
+- minecraft:sheep
+
+#carryon:stacking_blacklist
+
 #forge:endermen
 - minecraft:enderman
 - mekanismadditions:baby_enderman
+
+#botania:cocoon/rare_aquatic
+- minecraft:dolphin
+- minecraft:glow_squid
+- minecraft:axolotl
 
 #tconstruct:melting/show_in_default
 - minecraft:iron_golem
@@ -47,7 +63,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Oct
 - biomesoplenty:boat?
 - byg:boat?
 
+#botania:cocoon/rare
+- minecraft:horse
+- minecraft:donkey
+- minecraft:wolf
+- minecraft:ocelot
+- minecraft:cat
+- minecraft:parrot
+- minecraft:llama
+- minecraft:fox
+- minecraft:panda
+- minecraft:turtle
+- minecraft:goat
+- quark:frog?
+
 #tconstruct:piggybackpack_blacklist
+
+#c:bosses
+- botania:doppleganger
 
 #forbidden_arcanus:black_hole_affected
 - minecraft:item
@@ -61,6 +94,28 @@ To refresh this file, delete it and run /reload command again! Last updated: Oct
 - #forge:slimes
 
 #industrialforegoing:mob_duplicator_blacklist
+
+#botania:shaded_mesa_blacklist
+- minecraft:ender_dragon
+- minecraft:wither
+- minecraft:item_frame
+- minecraft:glow_item_frame
+- minecraft:end_crystal
+- minecraft:painting
+- minecraft:command_block_minecart
+- minecraft:marker
+- minecraft:area_effect_cloud
+- minecraft:evoker_fangs
+- minecraft:leash_knot
+- botania:corporea_spark
+- botania:doppleganger
+- botania:flame_ring
+- botania:magic_landmine
+- botania:magic_missile
+- botania:mana_burst
+- botania:pink_wither
+- botania:spark
+- botania:player_mover
 
 #minecraft:raiders
 - minecraft:evoker
@@ -105,12 +160,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Oct
 
 #ars_nouveau:disintegration_whitelist
 
+#carryon:entity_whitelist
+
 #forge:slimes
 - minecraft:slime
 - tconstruct:earth_slime
 - tconstruct:sky_slime
 - tconstruct:ender_slime
 - tconstruct:terracube
+
+#botania:cocoon/common_aquatic
+- minecraft:cod
+- minecraft:salmon
+- minecraft:tropical_fish
+- minecraft:pufferfish
+- minecraft:squid
+- quark:crab?
+
+#miniutilities:blacklisted
 
 #tconstruct:killagers
 - #forge:villagers
@@ -159,6 +226,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Oct
 - mekanismadditions:baby_stray
 - mekanismadditions:baby_wither_skeleton
 
+#ftbquests:no_loot_crates
+
 #ars_nouveau:drygmy_blacklist
 - minecraft:iron_golem
 
@@ -189,6 +258,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Oct
 - minecraft:pig
 - minecraft:piglin
 - minecraft:hoglin
+
+#bucketlib:milkable
+- minecraft:cow
+- minecraft:goat
+- minecraft:mooshroom
 
 #ars_nouveau:magic_find
 - ars_nouveau:starbuncle

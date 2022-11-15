@@ -13,11 +13,16 @@ onEvent('recipes', event => {
 	event.remove({output: 'thermal:machine_chiller'})
 	event.remove({output: 'mob_grinding_utils:nutritious_chicken_feed'})
 	event.remove({output: 'mob_grinding_utils:gm_chicken_feed_cursed'})
+	event.remove({output: 'create:propeller'})
+	
+	
+	event.remove({output: 'create:andesite_alloy'})
 	event.remove({id: 'create:milling/gravel'})
 	event.remove({id: 'create:milling/sandstone'})
 	event.remove({id: 'create:splashing/gravel'})
 	event.remove({id: 'create:splashing/sand'})
 	event.remove({id: 'create:splashing/soul_sand'})
+	event.remove({id: 'tconstruct:common/basalt_blast_furnace'})
 	
 
 	
@@ -26,21 +31,32 @@ onEvent('recipes', event => {
 	event.shapeless('tconstruct:crafting_station', ['4x #minecraft:planks'])
 	event.shapeless('tconstruct:crafting_station', ['minecraft:crafting_table'])
 	event.shapeless('minecraft:crafting_table', ['tconstruct:crafting_station'])
+	event.blasting('create:andesite_alloy', 'minecraft:andesite')
 	
 
 	event.recipes.createMilling('minecraft:sand', 'minecraft:gravel')
   
   //crushing sand to dust
-	event.recipes.createMilling('kubejs:dust', 'minecraft:sand')
-  event.recipes.thermal.pulverizer('kubejs:dust', 'minecraft:sand')
-  event.recipes.mekanismCrushing('kubejs:dust', 'minecraft:sand')
+	event.recipes.createMilling('nbx:dust', 'minecraft:sand')
+	event.recipes.thermal.pulverizer('nbx:dust', 'minecraft:sand')
+	event.recipes.mekanismCrushing('nbx:dust', 'minecraft:sand')
 
 
   //recipe for clay
-  event.recipes.createFilling('minecraft:clay', ['kubejs:dust',  Fluid.of('minecraft:water', 1000)])
-
-
-  event.recipes.createFilling('minecraft:dirt', ['minecraft:gravel',  Fluid.of('minecraft:water', 1000)])
+	event.recipes.createFilling('minecraft:clay', ['nbx:dust',  Fluid.of('minecraft:water', 1000)])
+	event.recipes.createFilling('minecraft:dirt', ['minecraft:gravel',  Fluid.of('minecraft:water', 1000)])
+	
+  //recipe for andesite alloy plate
+	event.recipes.thermal.press('nbx:andesite_alloy_plate', 'create:andesite_alloy')
+	event.recipes.createPressing('nbx:andesite_alloy_plate', 'create:andesite_alloy')
+	event.shaped('nbx:andesite_alloy_plate', [
+    'SS'
+	], {
+    S: 'create:andesite_alloy'
+	})
+	
+	
+	
 
   //recipe for ores
   event.recipes.createSplashing ([
@@ -84,7 +100,7 @@ onEvent('recipes', event => {
     Item.of('ae2:fluix_dust').withChance(0.15),
     Item.of('ae2:sky_dust').withChance(0.15),
     Item.of('ae2:certus_quartz_dust').withChance(0.15)
-  ], 'kubejs:dust')
+  ], 'nbx:dust')
 
   event.recipes.createSplashing ([
     Item.of('minecraft:ghast_tear').withChance(0.15),
@@ -137,6 +153,37 @@ onEvent('recipes', event => {
     S: 'minecraft:rotten_flesh',
     A: 'minecraft:egg'
   })
+  
+	event.shaped('create:cogwheel', [
+	'SSS',
+	'SAS',
+	'SSS'
+	], {
+	S: '#minecraft:wooden_buttons',
+	A: 'minecraft:polished_andesite'
+	})
+	
+	event.shaped('create:propeller', [
+	' A ',
+	'ASA',
+	' A '
+	], {
+	S: 'create:andesite_alloy',
+	A: 'nbx:andesite_alloy_plate'
+	})
+
+  
+
+  
+	event.shaped('minecraft:blast_furnace', [
+    'SSS',
+    'SAS',
+    'BBB'
+  ], {
+    S: 'mekanism:block_charcoal',
+    A: 'minecraft:furnace',
+    B: 'minecraft:smooth_stone'
+  })
 
 
 
@@ -152,6 +199,9 @@ event.shaped('thermal:machine_chiller', [
     E: 'thermal:invar_gear',
     F: 'thermal:rf_coil'
 })
+
+
+
 
 
 //tinkers
@@ -231,4 +281,34 @@ onEvent("block.right_click", (event) => {
     }
   }
 
-});
+})
+
+
+onEvent('block.right_click', event => {
+    if (event.block.id !='minecraft:cauldron') return
+    if (event.item.count == 0) return
+  	event.cancel()
+    let item = event.item.copy()
+    //if did not use .copy() the item would still be referencing the one in the hand, so setting the count to 1 would set the count in the hand to 1
+    item.count = 1
+  	event.item.count--
+  	
+    let itemEntity = event.block.createEntity('item')
+    itemEntity.y+=0.8 // on the top of the encahnting table, not in it
+    itemEntity.x+=0.5
+    itemEntity.z+=0.5
+    itemEntity.item = item
+    itemEntity.item.count = 1
+    itemEntity.pickupDelay = 100
+    itemEntity.noGravity = true
+    itemEntity.motionY = 0.08
+    itemEntity.spawn()
+  	
+  	function callback (i) {
+    	//changes the scope of itemEntity (otherwise if used 2 times in a row within 5 seconds, problems would occur)
+    	event.server.scheduleInTicks(100, callback => { // this code runs 5 seconds later
+    		i.noGravity = false
+    	})
+    }
+  	callback(itemEntity)
+})

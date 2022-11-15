@@ -1,0 +1,17 @@
+type = hud
+
+customization-meta {
+  randomgroup = 1
+  keepaspectratio = false
+  backgroundimage = kubejs/assets/background.png
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  x = 1
+  action = editlogo
+  y = 1
+}
+

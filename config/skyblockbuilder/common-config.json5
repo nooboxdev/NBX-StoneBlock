@@ -170,7 +170,7 @@
     // The block settings for generating the different dimensions surfaces.
     // Same format as flat world generation settings (blocks only)
     "surfaceSettings": {
-      "minecraft:overworld": "minecraft:bedrock,382*minecraft:stone,minecraft:bedrock",
+      "minecraft:overworld": "minecraft:bedrock,60*minecraft:deepslate,3*minecraft:tuff,3*minecraft:calcite,3*minecraft:granite,3*minecraft:diorite,3*minecraft:andesite,190*minecraft:stone,minecraft:bedrock",
       "minecraft:the_nether": "",
       "minecraft:the_end": ""
     }

@@ -64,10 +64,9 @@
 				count: 64L
 			}]
 			rewards: [{
-				id: "69393AB56D8A1690"
+				id: "139BD32672AD0AA4"
 				type: "item"
-				item: "create:andesite_alloy"
-				count: 32
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -398,9 +397,9 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: 3.5d
 			y: -4.0d
-			dependencies: ["2DAFD65475F50CA1"]
+			dependencies: ["7A2AB72F0C3252E3"]
 			id: "3F49559D155BB60F"
 			tasks: [{
 				id: "10C8CFC4A49C22C0"
@@ -415,7 +414,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 6.0d
 			y: -4.0d
 			dependencies: ["3F49559D155BB60F"]
 			id: "517318D431EDB7A2"
@@ -432,24 +431,24 @@
 			}]
 		}
 		{
-			x: 6.5d
+			x: 8.5d
 			y: -4.0d
 			dependencies: ["517318D431EDB7A2"]
 			id: "15456270A4F52DD3"
 			tasks: [{
 				id: "150259ECDA730C48"
 				type: "item"
-				item: "kubejs:dust"
+				item: "nbx:dust"
 			}]
 			rewards: [{
 				id: "2166FB0912A9E3B8"
 				type: "item"
-				item: "kubejs:dust"
+				item: "nbx:dust"
 				count: 64
 			}]
 		}
 		{
-			x: 3.5d
+			x: 6.0d
 			y: -5.5d
 			dependencies: ["517318D431EDB7A2"]
 			id: "3E49C662034CD3FE"
@@ -460,7 +459,7 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: 3.5d
 			y: -2.5d
 			dependencies: ["3F49559D155BB60F"]
 			id: "53BB99CA1517E14E"
@@ -478,9 +477,9 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 8.5d
 			y: -2.5d
-			dependencies: ["517318D431EDB7A2"]
+			dependencies: ["15456270A4F52DD3"]
 			id: "030EC718167D9D91"
 			tasks: [
 				{
@@ -516,9 +515,9 @@
 			]
 		}
 		{
-			x: 6.5d
-			y: -2.5d
-			dependencies: ["15456270A4F52DD3"]
+			x: 6.0d
+			y: -7.0d
+			dependencies: ["3E49C662034CD3FE"]
 			id: "6F02DB5B234E1C7A"
 			tasks: [
 				{
@@ -542,6 +541,66 @@
 				type: "xp"
 				xp: 10
 			}]
+		}
+		{
+			x: 6.0d
+			y: -2.5d
+			dependencies: ["517318D431EDB7A2"]
+			id: "327BABBA28AD5178"
+			tasks: [
+				{
+					id: "7C1C0AB1CB725C53"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+				}
+				{
+					id: "3E04B2BD28BE6F40"
+					type: "item"
+					item: "minecraft:prismarine_shard"
+				}
+				{
+					id: "1B60FB43D365A273"
+					type: "item"
+					item: "thermal:apatite"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			dependencies: ["2DAFD65475F50CA1"]
+			id: "7A2AB72F0C3252E3"
+			tasks: [
+				{
+					id: "5DD520190ADF0FFF"
+					type: "item"
+					item: "create:hand_crank"
+				}
+				{
+					id: "442AC3CAFBC9F205"
+					type: "item"
+					item: "create:millstone"
+				}
+				{
+					id: "5E7EDAC75D05D49D"
+					type: "item"
+					item: "create:encased_fan"
+				}
+			]
+			rewards: [
+				{
+					id: "18997477BF378965"
+					type: "item"
+					item: "create:cogwheel"
+					random_bonus: 5
+				}
+				{
+					id: "59CDD864695C4EB9"
+					type: "item"
+					item: "create:large_cogwheel"
+					random_bonus: 2
+				}
+			]
 		}
 	]
 }

@@ -7,7 +7,7 @@
 	#Changing this value will change the chance if a bonemeal effect gets applied or not
 	#Default value: 15
 	#Range: 1 ~ 100
-	Tree-Meal-Chance = 15
+	Tree-Meal-Chance = 50
 
 	[SneakyTreeGrowing.Crop-Settings]
 		#Changing this value to true will allow the mod to apply the bonemeal effect to crops like wheat and potato. Only works on Vannila plants
