@@ -170,7 +170,7 @@ onEvent('recipes', event => {
     'SAS',
     'BBB'
   ], {
-    S: 'mekanism:block_charcoal',
+    S: '#forge:storage_blocks/charcoal',
     A: 'minecraft:furnace',
     B: 'minecraft:smooth_stone'
   })
@@ -384,4 +384,11 @@ onEvent('block.right_click', event => {
     	})
     }
   	callback(itemEntity)
+})
+
+
+onEvent('tags.items', event => {
+	// Get the #forge:cobblestone tag collection and add Diamond Ore to it
+	event.add('forge:plates/andesite', 'nbx:andesite_alloy_plate')
+
 })

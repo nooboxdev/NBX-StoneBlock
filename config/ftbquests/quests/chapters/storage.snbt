@@ -1,0 +1,162 @@
+{
+	id: "04B7AFA01BA7F07B"
+	group: "4C76B411E29FCDA6"
+	order_index: 2
+	filename: "storage"
+	title: "Storage"
+	icon: "minecraft:chest"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.0d
+			y: -3.5d
+			dependencies: ["2DAFD65475F50CA1"]
+			id: "77E26EBCA8B6ED96"
+			tasks: [{
+				id: "2AD2BC7B9989A68F"
+				type: "item"
+				item: "stonechest:part_cobblestone"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.0d
+			dependencies: ["77E26EBCA8B6ED96"]
+			id: "3B2B398BD6CB8674"
+			tasks: [{
+				id: "45E6174795321EAC"
+				type: "item"
+				item: "stonechest:chest_cobblestone"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.5d
+			id: "186E0236B3AD3118"
+			tasks: [{
+				id: "53C0844E355F7F41"
+				type: "item"
+				item: "ae2:crafting_terminal"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			dependencies: ["186E0236B3AD3118"]
+			id: "271E240793C74E59"
+			tasks: [{
+				id: "608E2DF0DBE4DBD5"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_1k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			dependencies: ["271E240793C74E59"]
+			id: "6BBEDA6C44C387A6"
+			tasks: [{
+				id: "092A050F685142C2"
+				type: "item"
+				item: "ae2:drive"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			id: "13FB8D78DCFD5B5B"
+			tasks: [{
+				id: "14CE3081B782EAFC"
+				type: "item"
+				title: "Any #storagedrawers:drawers"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["13FB8D78DCFD5B5B"]
+			id: "17C653803CD5969B"
+			tasks: [{
+				id: "33B6B6BAD5387D67"
+				type: "item"
+				item: "storagedrawers:compacting_drawers_3"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			dependencies: ["17C653803CD5969B"]
+			id: "1F36B20EABF1B290"
+			tasks: [{
+				id: "75365BA7314BFB1E"
+				type: "item"
+				item: "storagedrawers:controller"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			dependencies: ["0484275539EABEC9"]
+			id: "4ED844FD3F2E090F"
+			tasks: [{
+				id: "4FDB5647BC42C92C"
+				type: "item"
+				item: "framedcompactdrawers:framed_drawer_controller"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.5d
+			id: "7B8885175EFC6517"
+			tasks: [{
+				id: "66FC3E0FB1A9EB68"
+				type: "item"
+				item: "framedcompactdrawers:framed_full_one"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			dependencies: ["7B8885175EFC6517"]
+			id: "0484275539EABEC9"
+			tasks: [{
+				id: "57916A88F77EABED"
+				type: "item"
+				item: "framedcompactdrawers:framed_compact_drawer"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.5d
+			id: "29F44F1444E0C3B0"
+			tasks: [{
+				id: "58C85582862043EA"
+				type: "item"
+				item: "rftoolsstorage:modular_storage"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.0d
+			dependencies: ["29F44F1444E0C3B0"]
+			id: "4D8C23DCA5F406B9"
+			tasks: [{
+				id: "105E71BA71E5C431"
+				type: "item"
+				item: "rftoolsstorage:storage_scanner"
+			}]
+		}
+	]
+}

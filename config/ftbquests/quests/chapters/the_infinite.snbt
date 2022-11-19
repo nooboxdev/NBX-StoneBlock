@@ -1,0 +1,264 @@
+{
+	id: "21F7ECB2DDDEA14E"
+	group: "64C4E0F6747F31C9"
+	order_index: 0
+	filename: "the_infinite"
+	title: "The Infinity"
+	icon: "avaritia:infinity"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -7.0d
+			y: -4.0d
+			id: "3872E5AE008104B8"
+			tasks: [{
+				id: "527B47D05D33F7E2"
+				type: "item"
+				item: "avaritia:crystal_matrix_ingot"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -2.5d
+			dependencies: ["3872E5AE008104B8"]
+			id: "16EA42B11D574EF8"
+			tasks: [{
+				id: "101B5CBD9F5F69D6"
+				type: "item"
+				item: "avaritia:extreme_crafting_table"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -1.0d
+			dependencies: ["16EA42B11D574EF8"]
+			id: "18F895B828D41EBF"
+			tasks: [{
+				id: "348B59F99C00C771"
+				type: "item"
+				item: "avaritia:neutron_collector"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 0.5d
+			dependencies: ["18F895B828D41EBF"]
+			id: "48A1AF417E5361B0"
+			tasks: [{
+				id: "044E5860A9A7D4A5"
+				type: "item"
+				item: "avaritia:neutronium_compressor"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			dependencies: ["48A1AF417E5361B0"]
+			id: "2515BF56E2D7D59C"
+			tasks: [{
+				id: "4D35567CF77A1573"
+				type: "item"
+				item: {
+					id: "avaritia:singularity"
+					Count: 1b
+					tag: {
+						Id: "avaritia:coal"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			dependencies: [
+				"2515BF56E2D7D59C"
+				"5DF4926D644DCE33"
+				"0D80343647DAB47B"
+				"7E53E90FA24A982E"
+			]
+			id: "1538076D7B290050"
+			tasks: [{
+				id: "12B3F801F247BB90"
+				type: "item"
+				item: "avaritia:infinity_catalyst"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			dependencies: ["1538076D7B290050"]
+			id: "57FEC5BD4FB41CAE"
+			tasks: [{
+				id: "22053BD84534B288"
+				type: "item"
+				item: "avaritia:infinity_ingot"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.5d
+			dependencies: ["16EA42B11D574EF8"]
+			id: "0D80343647DAB47B"
+			tasks: [{
+				id: "381318AF1944CFBA"
+				type: "item"
+				item: "avaritia:cosmic_meatballs"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			dependencies: [
+				"16EA42B11D574EF8"
+				"162CD208F041F82C"
+			]
+			id: "7E53E90FA24A982E"
+			tasks: [{
+				id: "045516D92A74BD9D"
+				type: "item"
+				item: "avaritia:endest_pearl"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -4.0d
+			dependencies: ["16EA42B11D574EF8"]
+			id: "5DF4926D644DCE33"
+			tasks: [{
+				id: "4DCF8FC7CA1D9BD1"
+				type: "item"
+				item: "avaritia:ultimate_stew"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.5d
+			dependencies: ["57FEC5BD4FB41CAE"]
+			id: "75866D6A733E6ABE"
+			tasks: [{
+				id: "64663200231AE980"
+				type: "item"
+				item: "avaritia:infinity_helmet"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			dependencies: ["75866D6A733E6ABE"]
+			id: "7CAAC0DA1E952A04"
+			tasks: [{
+				id: "30B0E325FE1C35C4"
+				type: "item"
+				item: "avaritia:infinity_chestplate"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			dependencies: ["7CAAC0DA1E952A04"]
+			id: "77B1DC2BCC1FBB7F"
+			tasks: [{
+				id: "1CCA71F5BA8E1AA8"
+				type: "item"
+				item: "avaritia:infinity_pants"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.5d
+			dependencies: ["77B1DC2BCC1FBB7F"]
+			id: "3BC4F4838BE645BB"
+			tasks: [{
+				id: "3B6C031958E63C6F"
+				type: "item"
+				item: "avaritia:infinity_boots"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			dependencies: ["57FEC5BD4FB41CAE"]
+			id: "7EF0782EFDE391A0"
+			tasks: [{
+				id: "0CEEEFE8BB1C6B8E"
+				type: "item"
+				item: {
+					id: "avaritia:infinity_pickaxe"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			dependencies: ["7EF0782EFDE391A0"]
+			id: "234B4C2B284D7FFC"
+			tasks: [{
+				id: "364400124DDA5152"
+				type: "item"
+				item: {
+					id: "avaritia:infinity_shovel"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			dependencies: ["234B4C2B284D7FFC"]
+			id: "64006719CD0ADED2"
+			tasks: [{
+				id: "45E8F27015878EBE"
+				type: "item"
+				item: "avaritia:infinity_hoe"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			dependencies: ["64006719CD0ADED2"]
+			id: "2E284A1E18C63458"
+			tasks: [{
+				id: "28D0E39D1208E17D"
+				type: "item"
+				item: "avaritia:infinity_axe"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			dependencies: ["57FEC5BD4FB41CAE"]
+			id: "5FED32BCE485CCAB"
+			tasks: [{
+				id: "148F1E79CDAAE7C6"
+				type: "item"
+				item: "avaritia:infinity_sword"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.0d
+			dependencies: ["5FED32BCE485CCAB"]
+			id: "0CA4769A5C8C5DC9"
+			tasks: [{
+				id: "7F2974306F2342ED"
+				type: "item"
+				item: "avaritia:infinity_bow"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -1.0d
+			dependencies: ["18F895B828D41EBF"]
+			id: "162CD208F041F82C"
+			tasks: [{
+				id: "5CCADBDC3855A3E0"
+				type: "item"
+				item: "avaritia:neutronium_ingot"
+			}]
+		}
+	]
+}

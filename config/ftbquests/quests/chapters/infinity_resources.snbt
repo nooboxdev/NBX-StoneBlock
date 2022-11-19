@@ -11,6 +11,11 @@
 		{
 			x: -2.5d
 			y: -4.0d
+			subtitle: "Attention: Smart chicken"
+			description: [
+				"to get a smart chicken, you need to right click with a book on a vanilla chicken"
+				""
+			]
 			id: "199CD60409B56C55"
 			tasks: [{
 				id: "2DE4F55388571331"
