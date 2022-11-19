@@ -9,6 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "16 Logs"
 			x: -6.0d
 			y: -4.0d
 			id: "73E94C8E21F112AF"
@@ -90,6 +91,7 @@
 			}]
 		}
 		{
+			title: "Tinkers"
 			x: -6.0d
 			y: -2.5d
 			dependencies: ["73E94C8E21F112AF"]
@@ -179,6 +181,7 @@
 		{
 			x: -3.5d
 			y: -2.5d
+			subtitle: "furnaces can be upgraded"
 			dependencies: ["2DAFD65475F50CA1"]
 			id: "68D592DE22997035"
 			tasks: [{
@@ -256,6 +259,8 @@
 		{
 			x: -2.5d
 			y: -2.5d
+			subtitle: "Caution Energy"
+			description: ["{image:nbx:textures/block/energy_generator.png width:100 height:100 align:1}"]
 			dependencies: ["2DAFD65475F50CA1"]
 			id: "03D71CC95054D761"
 			tasks: [{
@@ -322,6 +327,8 @@
 		{
 			x: -1.5d
 			y: -2.5d
+			subtitle: "Caution! is hot"
+			description: ["{image:nbx:textures/block/lava_producer.png width:100 height:100 align:1}"]
 			dependencies: ["2DAFD65475F50CA1"]
 			id: "3463A3F236DD9A14"
 			tasks: [{
@@ -566,15 +573,17 @@
 			]
 		}
 		{
+			title: "Keep calm and No stress"
 			x: 0.5d
 			y: -4.0d
+			subtitle: "Create stress disabled by default"
 			dependencies: ["2DAFD65475F50CA1"]
 			id: "7A2AB72F0C3252E3"
 			tasks: [
 				{
 					id: "5DD520190ADF0FFF"
 					type: "item"
-					item: "create:hand_crank"
+					item: "create:water_wheel"
 				}
 				{
 					id: "442AC3CAFBC9F205"

@@ -1,3 +1,7 @@
 {
-	chapter_groups: [{ id: "4C76B411E29FCDA6", title: "The Start" }]
+	chapter_groups: [
+		{ id: "4C76B411E29FCDA6", title: "The Start" }
+		{ id: "552598E98C28ABEF", title: "The Middle" }
+		{ id: "64C4E0F6747F31C9", title: "The Endgame" }
+	]
 }

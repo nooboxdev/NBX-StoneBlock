@@ -116,9 +116,17 @@ onEvent('recipes', event => {
     Item.of('minecraft:carrot').withChance(0.15),
     Item.of('minecraft:melon_seeds').withChance(0.15),
     Item.of('minecraft:pumpkin_seeds').withChance(0.15),
-    Item.of('minecraft:red_mushroom').withChance(0.15),
-    Item.of('minecraft:brown_mushroom').withChance(0.15)
+    Item.of('minecraft:bamboo').withChance(0.15),
+    Item.of('minecraft:sugar_cane').withChance(0.15),
+    Item.of('minecraft:cactus').withChance(0.15)
   ], 'minecraft:dirt')
+
+  event.recipes.createSplashing ([
+    Item.of('minecraft:red_mushroom').withChance(0.15),
+    Item.of('minecraft:brown_mushroom').withChance(0.15),
+    Item.of('minecraft:nether_wart').withChance(0.15)
+  ], 'minecraft:soul_soil')
+
 
 
 	
@@ -204,6 +212,45 @@ event.shaped(Item.of('chickens:chicken_item', '{ChickenType:{id:"chickens:log_ch
   S: '#minecraft:logs',
   A: 'minecraft:egg'
 })
+
+
+
+event.shaped('tconstruct:budding_earth_slime_crystal', [
+  'SSS',
+  'SAS',
+  'SSS'
+], {
+  S: 'tconstruct:earth_slime_crystal',
+  A: 'buddingcrystals:crystal_catalyst'
+})
+
+event.shaped('tconstruct:budding_sky_slime_crystal', [
+  'SSS',
+  'SAS',
+  'SSS'
+], {
+  S: 'tconstruct:sky_slime_crystal',
+  A: 'buddingcrystals:crystal_catalyst'
+})
+
+event.shaped('tconstruct:budding_ichor_slime_crystal', [
+  'SSS',
+  'SAS',
+  'SSS'
+], {
+  S: 'tconstruct:ichor_slime_crystal',
+  A: 'buddingcrystals:crystal_catalyst'
+})
+
+event.shaped('tconstruct:budding_ender_slime_crystal', [
+  'SSS',
+  'SAS',
+  'SSS'
+], {
+  S: 'tconstruct:ender_slime_crystal',
+  A: 'buddingcrystals:crystal_catalyst'
+})
+
 
 
 

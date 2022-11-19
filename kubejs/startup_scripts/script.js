@@ -6,12 +6,15 @@ onEvent('item.registry', event => {
 	// Register new items here
 	// event.create('example_item').displayName('Example Item')
 	event.create('nbx:andesite_alloy_plate').displayName('Andesite Alloy Plate')
+	//event.create('nbx:wooden_gear').displayName('Wooden gear')
+	//event.create('nbx:wooden_plate').displayName('Wooden Plate')
 })
 
 onEvent('block.registry', event => {
 	// Register new blocks here
 	// event.create('example_block').material('wood').hardness(1.0).displayName('Example Block')
 	event.create('nbx:dust').material('sand').hardness(1.0).displayName('Dust')
+	//event.create('nbx:wood_machine_frame').material('wood').hardness(1.0).displayName('Wood Machine Frame')
 })
 
 

@@ -1,0 +1,84 @@
+{
+	id: "5647B3EC7A47530B"
+	group: "4C76B411E29FCDA6"
+	order_index: 1
+	filename: "infinity_resources"
+	title: "Infinity Resources"
+	icon: "minecraft:diamond_ore"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.5d
+			y: -4.0d
+			id: "199CD60409B56C55"
+			tasks: [{
+				id: "2DE4F55388571331"
+				type: "item"
+				title: "Any #chickens:chickens"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "chickens:chickens"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.5d
+			dependencies: ["199CD60409B56C55"]
+			id: "08E19D1EE53D2794"
+			tasks: [{
+				id: "210B4E3E8ED5786D"
+				type: "item"
+				item: "chickens:breeder"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			dependencies: ["199CD60409B56C55"]
+			id: "1634C465F949FF2C"
+			tasks: [{
+				id: "27FC8293A01F1858"
+				type: "item"
+				item: "chickens:roost"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			id: "4D47C9A710A218D8"
+			tasks: [{
+				id: "7561BD58A9466FFC"
+				type: "item"
+				item: "industrialforegoing:ore_laser_base"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.5d
+			dependencies: ["4D47C9A710A218D8"]
+			id: "0BBF73ECFCED07EB"
+			tasks: [{
+				id: "0D453FA81CE1EE4A"
+				type: "item"
+				item: "industrialforegoing:laser_drill"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -4.0d
+			subtitle: "It is a block breaker"
+			description: ["you can use it to automate the generation of cobblestone"]
+			id: "17035DD7442FF944"
+			tasks: [{
+				id: "0384FBA3EF3353F2"
+				type: "item"
+				item: "miniutilities:mechanical_miner"
+			}]
+		}
+	]
+}
