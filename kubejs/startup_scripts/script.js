@@ -8,6 +8,7 @@ onEvent('item.registry', event => {
 	event.create('nbx:andesite_alloy_plate').displayName('Andesite Alloy Plate')
 	//event.create('nbx:wooden_gear').displayName('Wooden gear')
 	//event.create('nbx:wooden_plate').displayName('Wooden Plate')
+	event.create('nbx:incomplete_processor').displayName('Incomplete Processor')
 })
 
 onEvent('block.registry', event => {

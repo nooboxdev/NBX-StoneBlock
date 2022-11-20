@@ -12,6 +12,14 @@ onEvent('recipes', event => {
 	event.remove({output: 'tconstruct:crafting_station'})
 	event.remove({output: 'thermal:machine_chiller'})
 	event.remove({output: 'create:propeller'})
+	event.remove({output: 'ae2:printed_silicon'})
+	event.remove({output: 'ae2:printed_engineering_processor'})
+	event.remove({output: 'ae2:printed_logic_processor'})
+	event.remove({output: 'ae2:printed_calculation_processor'})
+  event.remove({output: 'ae2:logic_processor'})
+	event.remove({output: 'ae2:engineering_processor'})
+	event.remove({output: 'ae2:calculation_processor'})
+
 	
 	
 	event.remove({output: 'create:andesite_alloy'})
@@ -21,6 +29,13 @@ onEvent('recipes', event => {
 	event.remove({id: 'create:splashing/sand'})
 	event.remove({id: 'create:splashing/soul_sand'})
 	event.remove({id: 'tconstruct:common/basalt_blast_furnace'})
+	event.remove({id: 'ae2:inscriber/silicon_press'})
+	event.remove({id: 'ae2:inscriber/logic_processor_press'})
+	event.remove({id: 'ae2:inscriber/engineering_processor_press'})
+	event.remove({id: 'ae2:inscriber/calculation_processor_press'})
+
+
+
 	
 
 	
@@ -95,6 +110,7 @@ onEvent('recipes', event => {
     Item.of('minecraft:blaze_powder').withChance(0.15),
     Item.of('minecraft:gunpowder').withChance(0.15),
     Item.of('minecraft:bone_meal').withChance(0.15),
+    Item.of('minecraft:kelp').withChance(0.15),
     Item.of('ae2:fluix_dust').withChance(0.15),
     Item.of('ae2:sky_dust').withChance(0.15),
     Item.of('ae2:certus_quartz_dust').withChance(0.15)
@@ -253,9 +269,27 @@ event.shaped('tconstruct:budding_ender_slime_crystal', [
 
 
 
+//recipe for ae2 press
+
+event.recipes.thermal.press('ae2:logic_processor_press', ['minecraft:iron_block', 'minecraft:gold_block'])
+event.recipes.thermal.press('ae2:engineering_processor_press', ['minecraft:iron_block', 'minecraft:diamond_block'])
+event.recipes.thermal.press('ae2:calculation_processor_press', ['minecraft:iron_block', 'ae2:quartz_block'])
+event.recipes.thermal.press('ae2:silicon_press', ['minecraft:iron_block', 'ae2:silicon'])
 
 
+//recipe for ae2 printed circuits
 
+event.recipes.thermal.press('ae2:printed_silicon', ['ae2:silicon', 'ae2:silicon_press'])
+event.recipes.thermal.press('ae2:printed_engineering_processor', ['minecraft:diamond', 'ae2:engineering_processor_press'])
+event.recipes.thermal.press('ae2:printed_logic_processor', ['minecraft:gold_ingot', 'ae2:logic_processor_press'])
+event.recipes.thermal.press('ae2:printed_calculation_processor', ['ae2:certus_quartz_crystal', 'ae2:calculation_processor_press'])
+
+//recipe for ae2 processors
+
+event.recipes.createDeploying('nbx:incomplete_processor',['ae2:printed_silicon', 'minecraft:redstone'])
+event.recipes.createDeploying('ae2:logic_processor',['nbx:incomplete_processor', 'ae2:printed_logic_processor'])
+event.recipes.createDeploying('ae2:calculation_processor',['nbx:incomplete_processor', 'ae2:printed_calculation_processor'])
+event.recipes.createDeploying('ae2:engineering_processor',['nbx:incomplete_processor', 'ae2:printed_engineering_processor'])
 
 
 
@@ -292,6 +326,8 @@ event.custom({
 	"time": 40
 })
 	
+
+
 
 	
 	
@@ -390,5 +426,9 @@ onEvent('block.right_click', event => {
 onEvent('tags.items', event => {
 	// Get the #forge:cobblestone tag collection and add Diamond Ore to it
 	event.add('forge:plates/andesite', 'nbx:andesite_alloy_plate')
+	event.add('thermal:crafting/dies', 'ae2:silicon_press')
+	event.add('thermal:crafting/dies', 'ae2:logic_processor_press')
+	event.add('thermal:crafting/dies', 'ae2:engineering_processor_press')
+	event.add('thermal:crafting/dies', 'ae2:calculation_processor_press')
 
 })
