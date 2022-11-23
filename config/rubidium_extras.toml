@@ -5,7 +5,7 @@
 	[Settings.Misc]
 		"Cloud Height [Raw, Default 256]" = 256
 		"Chunk Fade In Quality (OFF, FAST, FANCY)" = "FANCY"
-		"Render Fog" = true
+		"Render Fog" = false
 		"Hide JEI Until Searching" = true
 		#Allowed Values: WINDOWED, BORDERLESS, FULLSCREEN
 		"Use Borderless Fullscreen" = "FULLSCREEN"
@@ -18,8 +18,8 @@
 		"Enable Max Distance Checks" = true
 		"(TileEntity) Max Horizontal Render Distance [Squared, Default 64^2]" = 4096
 		"(TileEntity) Max Vertical Render Distance [Raw, Default 32]" = 32
-		"(Entity) Max Horizontal Render Distance [Squared, Default 64^2]" = 4096
-		"(Entity) Max Vertical Render Distance [Raw, Default 32]" = 32
+		"(Entity) Max Horizontal Render Distance [Squared, Default 64^2]" = 1024
+		"(Entity) Max Vertical Render Distance [Raw, Default 32]" = 16
 
 	[Settings.Zoom]
 		"Lower Zoom Sensitivity" = true
@@ -30,7 +30,7 @@
 		"Zoom Overlay?" = true
 
 	[Settings."True Darkness"]
-		"Use True Darkness" = true
+		"Use True Darkness" = false
 		#Allowed Values: PITCH_BLACK, REALLY_DARK, DARK, DIM
 		"Darkness Setting (PITCH_BLACK, REALLY_DARK, DARK, DIM)" = "DARK"
 

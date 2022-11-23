@@ -11,5 +11,6 @@
   "entity.chickens.uranium_chicken": "Uranium Chicken",
   "entity.chickens.nickel_chicken": "Nickel Chicken",
   "entity.chickens.zinc_chicken": "Zinc Chicken",
-  "entity.chickens.lead_chicken": "Lead Chicken"
+  "entity.chickens.lead_chicken": "Lead Chicken",
+  "entity.chickens.wither_chicken": "Wither Chicken"
 }

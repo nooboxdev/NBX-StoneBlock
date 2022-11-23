@@ -1,0 +1,132 @@
+{
+	id: "1F0C2C2D20CCE5AF"
+	group: "552598E98C28ABEF"
+	order_index: 2
+	filename: "mob_farm"
+	title: "Mobs Farm"
+	icon: "minecraft:zombie_head"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.0d
+			y: -1.0d
+			subtitle: "The Golden Egg"
+			description: ["   Using the golden egg on a 5x5 area of dirt, she turns the dirt into a delightful dirt, which causes passive creatures to spawn."]
+			id: "34924E5780B55031"
+			tasks: [
+				{
+					id: "590AC6F109F07456"
+					type: "item"
+					item: "mob_grinding_utils:nutritious_chicken_feed"
+				}
+				{
+					id: "2BC7F2EC0164807F"
+					type: "item"
+					item: "mob_grinding_utils:golden_egg"
+				}
+			]
+			rewards: [{
+				id: "17728AC31431F348"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			subtitle: "The Rotten Egg"
+			description: ["   Using the rotten egg on a 5x5 area of dirt, it turns the dirt into dreadful dirt, which causes aggressive creatures to spawn."]
+			id: "029972869A40D194"
+			tasks: [
+				{
+					id: "2DDF715DE4E28490"
+					type: "item"
+					item: "mob_grinding_utils:gm_chicken_feed_cursed"
+				}
+				{
+					id: "3F845A7345CFFD16"
+					type: "item"
+					item: "mob_grinding_utils:rotten_egg"
+				}
+			]
+			rewards: [{
+				id: "27E9492E319C18F9"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
+		}
+		{
+			title: "Delightful Dirt"
+			x: -2.0d
+			y: 0.5d
+			dependencies: ["34924E5780B55031"]
+			id: "31F0E2B510ABFD97"
+			tasks: [{
+				id: "0323ADBC31B23252"
+				type: "observation"
+				icon: "mob_grinding_utils:delightful_dirt"
+				timer: 0L
+				observe_type: 0
+				to_observe: "mob_grinding_utils:delightful_dirt"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.5d
+			dependencies: ["029972869A40D194"]
+			dependency_requirement: "one_completed"
+			id: "7D1E541B8D3C07E2"
+			tasks: [{
+				id: "34F329E9AC5DABD1"
+				type: "observation"
+				title: "Dreadful Dirt"
+				icon: "mob_grinding_utils:dreadful_dirt"
+				timer: 0L
+				observe_type: 0
+				to_observe: "mob_grinding_utils:dreadful_dirt"
+			}]
+		}
+		{
+			title: "Wither Farm"
+			x: 2.0d
+			y: -1.0d
+			id: "28D1FE6B25EC348F"
+			tasks: [
+				{
+					id: "492E311095F2EA8C"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+					count: 3L
+				}
+				{
+					id: "0FB5C615FCCCDF4A"
+					type: "item"
+					item: "minecraft:soul_sand"
+					count: 4L
+				}
+				{
+					id: "3171A767E0B90EA5"
+					type: "item"
+					item: "minecraft:nether_star"
+				}
+			]
+			rewards: [{
+				id: "6B1DCF02A7E2A261"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			dependencies: ["28D1FE6B25EC348F"]
+			id: "2E5AB645B25F7194"
+			tasks: [{
+				id: "420F70B2564BDF87"
+				type: "item"
+				item: "industrialforegoing:wither_builder"
+			}]
+		}
+	]
+}

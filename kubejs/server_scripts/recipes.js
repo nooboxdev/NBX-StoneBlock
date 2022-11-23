@@ -5,7 +5,6 @@ settings.logRemovedRecipes = true
 settings.logSkippedRecipes = false
 settings.logErroringRecipes = true
 
-console.info('Hello, World! (You will see this line every time server resources reload)')
 
 onEvent('recipes', event => {
 	event.remove({output: 'minecraft:crafting_table'})
@@ -16,13 +15,14 @@ onEvent('recipes', event => {
 	event.remove({output: 'ae2:printed_engineering_processor'})
 	event.remove({output: 'ae2:printed_logic_processor'})
 	event.remove({output: 'ae2:printed_calculation_processor'})
-  event.remove({output: 'ae2:logic_processor'})
+	event.remove({output: 'ae2:logic_processor'})
 	event.remove({output: 'ae2:engineering_processor'})
 	event.remove({output: 'ae2:calculation_processor'})
-
-	
-	
+	event.remove({output: 'thermal:rubber'})
 	event.remove({output: 'create:andesite_alloy'})
+	event.remove({output: 'minecraft:dried_kelp_block'})
+	event.remove({output: 'torcherino:torcherino'})
+	
 	event.remove({id: 'create:milling/gravel'})
 	event.remove({id: 'create:milling/sandstone'})
 	event.remove({id: 'create:splashing/gravel'})
@@ -33,15 +33,22 @@ onEvent('recipes', event => {
 	event.remove({id: 'ae2:inscriber/logic_processor_press'})
 	event.remove({id: 'ae2:inscriber/engineering_processor_press'})
 	event.remove({id: 'ae2:inscriber/calculation_processor_press'})
-
-
-
+	/*event.remove({ id: 'thermal:devices/tree_extractor/tree_extractor_dark_oak' })
+	event.remove({ id: 'thermal:devices/tree_extractor/tree_extractor_jungle' })
+	event.remove({ id: 'thermal:devices/tree_extractor/tree_extractor_oak' })
+	event.remove({ id: 'thermal:devices/tree_extractor/tree_extractor_spruce' })
+	event.remove({ id: 'thermal:devices/tree_extractor/tree_extractor_acacia' })
+	event.remove({ id: 'thermal:devices/tree_extractor/tree_extractor_birch' })
+*/
+	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'minecraft:dried_kelp', 'thermal:cured_rubber')
 	
 
 	
 	
 	
+	event.shapeless('minecraft:dried_kelp_block', ['9x minecraft:dried_kelp'])
 	event.shapeless('tconstruct:crafting_station', ['4x #minecraft:planks'])
+	event.shapeless('minecraft:ender_pearl', ['4x #forge:dusts/ender_pearl'])
 	event.shapeless('tconstruct:crafting_station', ['minecraft:crafting_table'])
 	event.shapeless('minecraft:crafting_table', ['tconstruct:crafting_station'])
 	event.blasting('create:andesite_alloy', 'minecraft:andesite')
@@ -79,7 +86,7 @@ onEvent('recipes', event => {
     Item.of('minecraft:raw_copper').withChance(0.1),
     Item.of('minecraft:raw_gold').withChance(0.15),
     Item.of('minecraft:coal').withChance(0.1),
-    Item.of('miniutilities:ender_dust').withChance(0.1),
+    Item.of('ae2:ender_dust').withChance(0.1),
     Item.of('mekanism:raw_lead').withChance(0.15),
     Item.of('create:raw_zinc').withChance(0.15),
     Item.of('mekanism:raw_osmium').withChance(0.15),
@@ -96,7 +103,6 @@ onEvent('recipes', event => {
     Item.of('minecraft:prismarine_crystals').withChance(0.15),
     Item.of('mekanism:salt').withChance(0.15),
     Item.of('mekanism:fluorite_gem').withChance(0.15),
-    Item.of('minecraft:cocoa_beans').withChance(0.05),
     Item.of('thermal:niter').withChance(0.15),
     Item.of('thermal:apatite').withChance(0.15),
     Item.of('thermal:cinnabar').withChance(0.15),
@@ -110,7 +116,6 @@ onEvent('recipes', event => {
     Item.of('minecraft:blaze_powder').withChance(0.15),
     Item.of('minecraft:gunpowder').withChance(0.15),
     Item.of('minecraft:bone_meal').withChance(0.15),
-    Item.of('minecraft:kelp').withChance(0.15),
     Item.of('ae2:fluix_dust').withChance(0.15),
     Item.of('ae2:sky_dust').withChance(0.15),
     Item.of('ae2:certus_quartz_dust').withChance(0.15)
@@ -125,23 +130,6 @@ onEvent('recipes', event => {
     Item.of('rftoolsbase:dimensionalshard').withChance(0.15)
   ], 'minecraft:soul_sand')
 
-  event.recipes.createSplashing ([
-    Item.of('minecraft:wheat_seeds').withChance(0.15),
-    Item.of('minecraft:beetroot_seeds').withChance(0.15),
-    Item.of('minecraft:potato').withChance(0.15),
-    Item.of('minecraft:carrot').withChance(0.15),
-    Item.of('minecraft:melon_seeds').withChance(0.15),
-    Item.of('minecraft:pumpkin_seeds').withChance(0.15),
-    Item.of('minecraft:bamboo').withChance(0.15),
-    Item.of('minecraft:sugar_cane').withChance(0.15),
-    Item.of('minecraft:cactus').withChance(0.15)
-  ], 'minecraft:dirt')
-
-  event.recipes.createSplashing ([
-    Item.of('minecraft:red_mushroom').withChance(0.15),
-    Item.of('minecraft:brown_mushroom').withChance(0.15),
-    Item.of('minecraft:nether_wart').withChance(0.15)
-  ], 'minecraft:soul_soil')
 
 
 
@@ -267,6 +255,13 @@ event.shaped('tconstruct:budding_ender_slime_crystal', [
   A: 'buddingcrystals:crystal_catalyst'
 })
 
+event.shaped('nbx:crook', [
+  'SS',
+  ' S',
+  ' S'
+], {
+  S: 'minecraft:stick'
+})
 
 
 //recipe for ae2 press

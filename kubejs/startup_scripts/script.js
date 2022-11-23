@@ -9,6 +9,10 @@ onEvent('item.registry', event => {
 	//event.create('nbx:wooden_gear').displayName('Wooden gear')
 	//event.create('nbx:wooden_plate').displayName('Wooden Plate')
 	event.create('nbx:incomplete_processor').displayName('Incomplete Processor')
+	event.create('nbx:crook', 'shovel').tier('diamond').attackDamageBaseline(10.0)
+	event
+    .create("nbx:incomplete_torcherio")
+    .texture("minecraft:item/redstone_torch");
 })
 
 onEvent('block.registry', event => {

@@ -1,0 +1,124 @@
+{
+	id: "72E9F0AE5216EF73"
+	group: "552598E98C28ABEF"
+	order_index: 0
+	filename: "the_speed_of_light"
+	title: "The Speed of light"
+	icon: "botania:light_relay"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -6.0d
+			y: -3.5d
+			dependencies: ["2E9061FF3DD65959"]
+			id: "31AF2A5130F4D599"
+			tasks: [{
+				id: "1F30BA825B23649A"
+				type: "item"
+				item: "torcherino:torcherino"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -2.0d
+			dependencies: ["31AF2A5130F4D599"]
+			id: "503A778BE9AC1213"
+			tasks: [{
+				id: "43D66E510E58B701"
+				type: "item"
+				item: "torcherino:compressed_torcherino"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -0.5d
+			dependencies: ["503A778BE9AC1213"]
+			id: "6F33AA8CB9967759"
+			tasks: [{
+				id: "0EB7EA53EA24F74F"
+				type: "item"
+				item: "torcherino:double_compressed_torcherino"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.5d
+			dependencies: ["2E9061FF3DD65959"]
+			id: "0D4CEB52D5C15D0C"
+			tasks: [{
+				id: "5A6AAA6C2234D9F2"
+				type: "item"
+				item: "torcherino:lantern"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			dependencies: ["0D4CEB52D5C15D0C"]
+			id: "571B145533A8C2F4"
+			tasks: [{
+				id: "3DB5A101FB8DB4CA"
+				type: "item"
+				item: "torcherino:compressed_lantern"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			dependencies: ["571B145533A8C2F4"]
+			id: "1C7D2AB6D19BC57E"
+			tasks: [{
+				id: "0B1EBE60E305D468"
+				type: "item"
+				item: "torcherino:double_compressed_lantern"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			dependencies: ["2E9061FF3DD65959"]
+			id: "7101155C0D476008"
+			tasks: [{
+				id: "6AC8194A10CDB725"
+				type: "item"
+				item: "torcherino:lanterino"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			dependencies: ["7101155C0D476008"]
+			id: "13094D34710EFD4B"
+			tasks: [{
+				id: "6F4B10A52199F331"
+				type: "item"
+				item: "torcherino:compressed_lanterino"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			dependencies: ["13094D34710EFD4B"]
+			id: "1306076DD10988A3"
+			tasks: [{
+				id: "259DCC399D4CA0DE"
+				type: "item"
+				item: "torcherino:double_compressed_lanterino"
+			}]
+		}
+		{
+			title: "The Torcherino Mod"
+			x: -4.0d
+			y: -6.0d
+			subtitle: "Fast Speed"
+			description: ["   Torcherino is a mod that speeds up time within an area, just like the clock in projectE"]
+			id: "2E9061FF3DD65959"
+			tasks: [{
+				id: "47CB642A69EE0297"
+				type: "checkmark"
+				title: "The lanterio mod"
+			}]
+		}
+	]
+}

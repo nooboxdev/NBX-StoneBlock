@@ -820,5 +820,19 @@
     "spawn_type": "NONE",
     "parent_1": "chickens:cobalt_chicken",
     "parent_2": "chickens:gold_chicken"
+  },
+  "chickens:wither_chicken": {
+    "name": "wither_chicken",
+    "is_enabled": true,
+    "lay_coefficient": 1.0,
+    "lay_item": {
+      "itemID": "minecraft:wither_skeleton_skull"
+    },
+    "drop_item": {
+      "itemID": "minecraft:wither_skeleton_skull"
+    },
+    "spawn_type": "NONE",
+    "parent_1": "chickens:netherite_chicken",
+    "parent_2": "chickens:coal_chicken"
   }
 }

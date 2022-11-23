@@ -1,0 +1,376 @@
+{
+	id: "1AEED819758B222E"
+	group: "552598E98C28ABEF"
+	order_index: 3
+	filename: "crystals_farm"
+	title: "Crystals Farm"
+	icon: "tconstruct:ender_slime_crystal"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.0d
+			y: -2.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "10F6F257420747AC"
+			tasks: [{
+				id: "07676BD3B0AF01B3"
+				type: "item"
+				item: "minecraft:budding_amethyst"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -1.0d
+			dependencies: ["10F6F257420747AC"]
+			id: "2C5A1E61D22EDD3C"
+			tasks: [{
+				id: "7AE6B9537F27A6D9"
+				type: "item"
+				item: "minecraft:amethyst_shard"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "580907967A4CCA40"
+			tasks: [{
+				id: "2FA374E3377A8FB4"
+				type: "item"
+				item: "tconstruct:budding_earth_slime_crystal"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.0d
+			dependencies: ["580907967A4CCA40"]
+			id: "17DE24107B04F14E"
+			tasks: [{
+				id: "349E8C246EAF1918"
+				type: "item"
+				item: "tconstruct:earth_slime_crystal"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			can_repeat: true
+			id: "334D87BE8483FF5E"
+			tasks: [{
+				id: "042CB53EE68F9A0D"
+				type: "item"
+				item: "tconstruct:budding_sky_slime_crystal"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "0D3DA441D61839B4"
+			tasks: [{
+				id: "5507108D35AD24B0"
+				type: "item"
+				item: "tconstruct:budding_ichor_slime_crystal"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "1B37D3722DB07F21"
+			tasks: [{
+				id: "63F72356F7A04824"
+				type: "item"
+				item: "tconstruct:budding_ender_slime_crystal"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			dependencies: ["0D3DA441D61839B4"]
+			id: "1F0F1CB52331D815"
+			tasks: [{
+				id: "07589D9A07E04E8A"
+				type: "item"
+				item: "tconstruct:ichor_slime_crystal"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			dependencies: ["334D87BE8483FF5E"]
+			id: "109FA0DB91F891CF"
+			tasks: [{
+				id: "4B36B571D619EAA9"
+				type: "item"
+				item: "tconstruct:sky_slime_crystal"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.0d
+			dependencies: ["1B37D3722DB07F21"]
+			id: "0F5CAC4D0C032E7E"
+			tasks: [{
+				id: "13F78FDE883BE689"
+				type: "item"
+				item: "tconstruct:ender_slime_crystal"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "12BA408509C50AD4"
+			tasks: [{
+				id: "65EA4D2136C18D17"
+				type: "item"
+				item: "buddingcrystals:budding_redstone"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "77E28C2E7FEE52E9"
+			tasks: [{
+				id: "57AE89F94BB4A214"
+				type: "item"
+				item: "buddingcrystals:budding_diamond"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -7.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "48F842178FD3ACE0"
+			tasks: [{
+				id: "05F7556D92B8084F"
+				type: "item"
+				item: "buddingcrystals:budding_emerald"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -7.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "01C56823BBFD8326"
+			tasks: [{
+				id: "6ABFF58DA8906DAF"
+				type: "item"
+				item: "buddingcrystals:budding_lapis_lazuli"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -7.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			dependency_requirement: "one_started"
+			id: "44E74E29DDE0FB7E"
+			tasks: [{
+				id: "711EBBE241202C00"
+				type: "item"
+				item: "buddingcrystals:budding_glowstone"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "607770E421B734A7"
+			tasks: [{
+				id: "5390DA4E43631583"
+				type: "item"
+				item: "buddingcrystals:budding_nether_quartz"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -6.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "7D57806B65867D6A"
+			tasks: [{
+				id: "6D9BBC0330DDB3DF"
+				type: "item"
+				item: "buddingcrystals:budding_prismarine"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -5.0d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "7069B3A898F9FC7A"
+			tasks: [{
+				id: "2E282736592DB6AE"
+				type: "item"
+				item: "buddingcrystals:budding_certus_quartz"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "175C919099F98888"
+			tasks: [{
+				id: "694335407F3C0186"
+				type: "item"
+				item: "buddingcrystals:budding_fluix"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -5.0d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "5E443C7FDC68F2D4"
+			tasks: [{
+				id: "1FE143D84D3D7D04"
+				type: "item"
+				item: "buddingcrystals:budding_salt"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -6.5d
+			dependencies: ["36A1DB03FAF5D37A"]
+			id: "29A8002E54561B0C"
+			tasks: [{
+				id: "630E85DB3115F7E6"
+				type: "item"
+				item: "buddingcrystals:budding_fluorite"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.0d
+			id: "36A1DB03FAF5D37A"
+			tasks: [{
+				id: "167EB8B037B5A7D0"
+				type: "item"
+				item: "buddingcrystals:crystal_catalyst"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -9.0d
+			dependencies: ["44E74E29DDE0FB7E"]
+			id: "15AED883CFCF04A0"
+			tasks: [{
+				id: "7065ECA2AB9A7ADF"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -9.0d
+			dependencies: ["01C56823BBFD8326"]
+			id: "203F9265C8D64FFB"
+			tasks: [{
+				id: "30CDA7B3067A0C9C"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -9.0d
+			dependencies: ["12BA408509C50AD4"]
+			id: "290D4DB233220A42"
+			tasks: [{
+				id: "4E2F40AD225502F4"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -9.0d
+			dependencies: ["77E28C2E7FEE52E9"]
+			id: "7002E381E853BD68"
+			tasks: [{
+				id: "2369FBEE7B941660"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -9.0d
+			dependencies: ["48F842178FD3ACE0"]
+			id: "49860E24959AA5ED"
+			tasks: [{
+				id: "0C55E3CE70E89BB4"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -6.5d
+			dependencies: ["29A8002E54561B0C"]
+			id: "6184CDECFE50EEDB"
+			tasks: [{
+				id: "10C38669677E8127"
+				type: "item"
+				item: "mekanism:fluorite_gem"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -5.0d
+			dependencies: ["5E443C7FDC68F2D4"]
+			id: "5B5AAB883857E8C9"
+			tasks: [{
+				id: "52825FE3DC9BD7D6"
+				type: "item"
+				item: "mekanism:salt"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -3.5d
+			dependencies: ["607770E421B734A7"]
+			id: "21122B2EECD324C3"
+			tasks: [{
+				id: "602507718528B329"
+				type: "item"
+				item: "minecraft:quartz"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -5.0d
+			dependencies: ["7069B3A898F9FC7A"]
+			id: "7672A1DA81CBCFD2"
+			tasks: [{
+				id: "3246B42D3A9E8565"
+				type: "item"
+				item: "ae2:certus_quartz_crystal"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -3.5d
+			dependencies: ["175C919099F98888"]
+			id: "573114C879A48F7F"
+			tasks: [{
+				id: "55D7AA223A38E329"
+				type: "item"
+				item: "ae2:fluix_crystal"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -6.5d
+			dependencies: ["7D57806B65867D6A"]
+			id: "3A92DD7E9553C262"
+			tasks: [{
+				id: "28842F467E19C807"
+				type: "item"
+				item: "minecraft:prismarine"
+			}]
+		}
+	]
+}

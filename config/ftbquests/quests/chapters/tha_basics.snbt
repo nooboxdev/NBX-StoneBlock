@@ -10,7 +10,7 @@
 	quests: [
 		{
 			title: "16 Logs"
-			x: -6.0d
+			x: -6.5d
 			y: -4.0d
 			id: "73E94C8E21F112AF"
 			tasks: [{
@@ -76,6 +76,7 @@
 			dependencies: [
 				"73E94C8E21F112AF"
 				"63B8E9C0D1F76E86"
+				"5F88484369FA2AE7"
 			]
 			id: "25EA0DBF02EEAD93"
 			tasks: [{
@@ -92,8 +93,8 @@
 		}
 		{
 			title: "Tinkers"
-			x: -6.0d
-			y: -2.5d
+			x: -5.0d
+			y: -3.5d
 			dependencies: ["73E94C8E21F112AF"]
 			id: "219D47856AB5EA4B"
 			tasks: [
@@ -156,9 +157,9 @@
 				}
 			}]
 			rewards: [{
-				id: "776A959156464777"
-				type: "xp"
-				xp: 10
+				id: "0CA872E8C92F2310"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -177,6 +178,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "32EBBAF133D9A80C"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: -3.5d
@@ -189,6 +195,11 @@
 				type: "item"
 				item: "minecraft:furnace"
 			}]
+			rewards: [{
+				id: "16E3F95B7F0E8815"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: -3.5d
@@ -199,6 +210,11 @@
 				id: "387E668CFF30D629"
 				type: "item"
 				item: "ironfurnaces:iron_furnace"
+			}]
+			rewards: [{
+				id: "6EED8DE21F06C863"
+				type: "item"
+				item: "ironfurnaces:upgrade_iron"
 			}]
 		}
 		{
@@ -211,6 +227,11 @@
 				type: "item"
 				item: "ironfurnaces:gold_furnace"
 			}]
+			rewards: [{
+				id: "3D48169EAFB6407E"
+				type: "item"
+				item: "ironfurnaces:upgrade_gold"
+			}]
 		}
 		{
 			x: -3.5d
@@ -221,6 +242,11 @@
 				id: "6C93E7D7EE8492DD"
 				type: "item"
 				item: "ironfurnaces:diamond_furnace"
+			}]
+			rewards: [{
+				id: "0C1A4B8CEE90691F"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -233,6 +259,11 @@
 				type: "item"
 				item: "ironfurnaces:emerald_furnace"
 			}]
+			rewards: [{
+				id: "4AE03409B1064DF4"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: -3.5d
@@ -244,6 +275,11 @@
 				type: "item"
 				item: "ironfurnaces:obsidian_furnace"
 			}]
+			rewards: [{
+				id: "5501DD142DE14375"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: -3.5d
@@ -254,6 +290,11 @@
 				id: "411F9C35C5FE43D0"
 				type: "item"
 				item: "ironfurnaces:netherite_furnace"
+			}]
+			rewards: [{
+				id: "03006BC436E82A9F"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -268,6 +309,11 @@
 				type: "item"
 				item: "irongenerators:stone_generator"
 			}]
+			rewards: [{
+				id: "34ECCD5336C786B6"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: -2.5d
@@ -278,6 +324,11 @@
 				id: "70A7BCF002023C4E"
 				type: "item"
 				item: "irongenerators:iron_generator"
+			}]
+			rewards: [{
+				id: "4C1D91FAE56DB249"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -290,6 +341,11 @@
 				type: "item"
 				item: "irongenerators:gold_generator"
 			}]
+			rewards: [{
+				id: "37C6629C9DAED465"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: -2.5d
@@ -300,6 +356,11 @@
 				id: "09FF9E39FF026CD4"
 				type: "item"
 				item: "irongenerators:diamond_generator"
+			}]
+			rewards: [{
+				id: "39E6172952B1CD69"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -312,6 +373,11 @@
 				type: "item"
 				item: "irongenerators:obsidian_generator"
 			}]
+			rewards: [{
+				id: "7009402789BA7DBF"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: -2.5d
@@ -322,6 +388,11 @@
 				id: "2ABB9743117C1E62"
 				type: "item"
 				item: "irongenerators:netherite_generator"
+			}]
+			rewards: [{
+				id: "4BD29762CA603B1C"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -336,6 +407,11 @@
 				type: "item"
 				item: "lava_source:stone_lava_source_furnace"
 			}]
+			rewards: [{
+				id: "54B1B15C915DEA24"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: -1.5d
@@ -346,6 +422,11 @@
 				id: "2C7492A5C7E266F2"
 				type: "item"
 				item: "lava_source:iron_lava_source_furnace"
+			}]
+			rewards: [{
+				id: "13FBE7AC1CE4559E"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -358,6 +439,11 @@
 				type: "item"
 				item: "lava_source:gold_lava_source_furnace"
 			}]
+			rewards: [{
+				id: "651EA084DD57AD31"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: -1.5d
@@ -368,6 +454,11 @@
 				id: "5F868FE8F8144CFB"
 				type: "item"
 				item: "lava_source:diamond_lava_source_furnace"
+			}]
+			rewards: [{
+				id: "29A161BBE764C717"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -380,27 +471,43 @@
 				type: "item"
 				item: "lava_source:netherite_lava_source_furnace"
 			}]
+			rewards: [{
+				id: "3CD18BCAE282EA62"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: -7.0d
 			y: 5.5d
-			subtitle: "automatize generator and processor"
+			subtitle: " automate the creation and processing of ores"
 			id: "6F679466E151485A"
 			tasks: [{
 				id: "58722B0082DC2510"
 				type: "checkmark"
 				title: "Automatize Resorces"
 			}]
+			rewards: [{
+				id: "3867AB7743CEC216"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 		}
 		{
+			title: "Rubber Farm"
 			x: -5.5d
 			y: 5.5d
-			subtitle: "Automatize the kelp farm"
+			subtitle: "Automatize the rubber farm"
 			id: "4042E6EAB99A3809"
 			tasks: [{
 				id: "30B71D387BC3486E"
 				type: "checkmark"
 				title: "Kelp farm"
+			}]
+			rewards: [{
+				id: "30D233E661B8F377"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -464,6 +571,12 @@
 				type: "item"
 				item: "minecraft:soul_sand"
 			}]
+			rewards: [{
+				id: "775623CF9DACB77D"
+				type: "item"
+				item: "minecraft:soul_sand"
+				count: 64
+			}]
 		}
 		{
 			x: 3.5d
@@ -481,6 +594,11 @@
 						value: "forge:raw_materials"
 					}
 				}
+			}]
+			rewards: [{
+				id: "55AB2C99B8A112AF"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -520,6 +638,11 @@
 					item: "minecraft:blaze_powder"
 				}
 			]
+			rewards: [{
+				id: "446991FC3C89C5BD"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: 6.0d
@@ -571,6 +694,11 @@
 					item: "thermal:apatite"
 				}
 			]
+			rewards: [{
+				id: "795A93524A7D6DB3"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			title: "Keep calm and No stress"
@@ -610,6 +738,140 @@
 					random_bonus: 2
 				}
 			]
+		}
+		{
+			x: -8.0d
+			y: -2.5d
+			subtitle: "The Crook"
+			description: [
+				"     Using the crook, you get more apples when breaking leaves."
+				""
+				"     It can also be used to get seeds and other resources by breaking sand, soul sand and dirt."
+			]
+			dependencies: ["73E94C8E21F112AF"]
+			id: "52ED23AD452612C3"
+			tasks: [{
+				id: "22BE1D7E3B59C6F1"
+				type: "item"
+				item: {
+					id: "nbx:crook"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "224EEC0914052B47"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -1.5d
+			subtitle: "Break Sand"
+			dependencies: ["52ED23AD452612C3"]
+			id: "599E4C9E3573B4FB"
+			tasks: [
+				{
+					id: "2156B930451FC091"
+					type: "item"
+					item: "minecraft:cactus"
+				}
+				{
+					id: "6075606C8E2E839E"
+					type: "item"
+					item: "minecraft:kelp"
+				}
+				{
+					id: "3B94805966B0E414"
+					type: "item"
+					item: "minecraft:sugar_cane"
+				}
+			]
+			rewards: [{
+				id: "66B1AC751E344141"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -1.0d
+			subtitle: "Break Dirt"
+			dependencies: ["52ED23AD452612C3"]
+			id: "55A97B7B47DC275F"
+			tasks: [
+				{
+					id: "5AC1A90B87BB638D"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+				}
+				{
+					id: "0D6D68EBF9247A69"
+					type: "item"
+					item: "minecraft:pumpkin_seeds"
+				}
+				{
+					id: "221A2D56EF025662"
+					type: "item"
+					item: "minecraft:melon_seeds"
+				}
+				{
+					id: "4797515635DFF1AE"
+					type: "item"
+					item: "minecraft:beetroot_seeds"
+				}
+				{
+					id: "3FEFAD7F07059F8F"
+					type: "item"
+					item: "minecraft:carrot"
+				}
+				{
+					id: "59313C432DAEA60D"
+					type: "item"
+					item: "minecraft:potato"
+				}
+			]
+			rewards: [{
+				id: "4778C74D7F9533AB"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -0.5d
+			dependencies: ["52ED23AD452612C3"]
+			id: "5D9F19AEFA91FD3D"
+			tasks: [
+				{
+					id: "165EDDC3CFD9087C"
+					type: "item"
+					item: "minecraft:brown_mushroom"
+				}
+				{
+					id: "27D64D0E969C5BBE"
+					type: "item"
+					item: "minecraft:red_mushroom"
+				}
+				{
+					id: "50DD7A2E28219E35"
+					type: "item"
+					item: "minecraft:crimson_fungus"
+				}
+				{
+					id: "01AA3F0BE9C77AB8"
+					type: "item"
+					item: "minecraft:warped_fungus"
+				}
+			]
+			rewards: [{
+				id: "2DB6A5B56536F2EF"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 	]
 }

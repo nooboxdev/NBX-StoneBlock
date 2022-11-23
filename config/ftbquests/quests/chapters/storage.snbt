@@ -17,6 +17,7 @@
 				id: "2AD2BC7B9989A68F"
 				type: "item"
 				item: "stonechest:part_cobblestone"
+				count: 4L
 			}]
 		}
 		{
@@ -29,15 +30,32 @@
 				type: "item"
 				item: "stonechest:chest_cobblestone"
 			}]
+			rewards: [{
+				id: "02FC0F721FE5DD40"
+				type: "item"
+				item: "stonechest:chest_cobblestone"
+			}]
 		}
 		{
 			x: -2.5d
 			y: -3.5d
 			id: "186E0236B3AD3118"
-			tasks: [{
-				id: "53C0844E355F7F41"
+			tasks: [
+				{
+					id: "53C0844E355F7F41"
+					type: "item"
+					item: "ae2:crafting_terminal"
+				}
+				{
+					id: "00E9E8A3C5C212CB"
+					type: "item"
+					item: "ae2:fluix_glass_cable"
+				}
+			]
+			rewards: [{
+				id: "0350E1AD3496799B"
 				type: "item"
-				item: "ae2:crafting_terminal"
+				item: "ae2:pattern_encoding_terminal"
 			}]
 		}
 		{
@@ -54,6 +72,15 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "41BEA5F5F10B65E3"
+				type: "item"
+				item: {
+					id: "ae2:fluid_storage_cell_1k"
+					Count: 1b
+					tag: { }
+				}
+			}]
 		}
 		{
 			x: -2.5d
@@ -64,6 +91,11 @@
 				id: "092A050F685142C2"
 				type: "item"
 				item: "ae2:drive"
+			}]
+			rewards: [{
+				id: "0727E30C1D9BCBA8"
+				type: "item"
+				item: "ae2:nether_quartz_wrench"
 			}]
 		}
 		{
@@ -82,6 +114,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "3173A5313F591C90"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: 0.0d
@@ -92,6 +129,11 @@
 				id: "33B6B6BAD5387D67"
 				type: "item"
 				item: "storagedrawers:compacting_drawers_3"
+			}]
+			rewards: [{
+				id: "14A11D3D5F7FD61B"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -104,6 +146,11 @@
 				type: "item"
 				item: "storagedrawers:controller"
 			}]
+			rewards: [{
+				id: "3A975CFDE75C9283"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: 2.5d
@@ -115,6 +162,12 @@
 				type: "item"
 				item: "framedcompactdrawers:framed_drawer_controller"
 			}]
+			rewards: [{
+				id: "070A5AE9CA49BBDB"
+				type: "item"
+				item: "framedcompactdrawers:framed_full_one"
+				count: 5
+			}]
 		}
 		{
 			x: 2.5d
@@ -122,6 +175,11 @@
 			id: "7B8885175EFC6517"
 			tasks: [{
 				id: "66FC3E0FB1A9EB68"
+				type: "item"
+				item: "framedcompactdrawers:framed_full_one"
+			}]
+			rewards: [{
+				id: "5E663AE48D587F71"
 				type: "item"
 				item: "framedcompactdrawers:framed_full_one"
 			}]
@@ -136,6 +194,11 @@
 				type: "item"
 				item: "framedcompactdrawers:framed_compact_drawer"
 			}]
+			rewards: [{
+				id: "2D594EFEAD3DF76F"
+				type: "item"
+				item: "framedcompactdrawers:framed_compact_drawer"
+			}]
 		}
 		{
 			x: 4.5d
@@ -145,6 +208,11 @@
 				id: "58C85582862043EA"
 				type: "item"
 				item: "rftoolsstorage:modular_storage"
+			}]
+			rewards: [{
+				id: "0F245ADBB0B05E72"
+				type: "item"
+				item: "rftoolsbase:smartwrench"
 			}]
 		}
 		{
@@ -156,6 +224,12 @@
 				id: "105E71BA71E5C431"
 				type: "item"
 				item: "rftoolsstorage:storage_scanner"
+			}]
+			rewards: [{
+				id: "0AF8082E2B6357FD"
+				type: "item"
+				item: "minecraft:barrel"
+				random_bonus: 3
 			}]
 		}
 	]

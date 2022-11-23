@@ -29,6 +29,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "2B5FFB4CBE87E639"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: -3.5d
@@ -37,6 +42,11 @@
 			id: "08E19D1EE53D2794"
 			tasks: [{
 				id: "210B4E3E8ED5786D"
+				type: "item"
+				item: "chickens:breeder"
+			}]
+			rewards: [{
+				id: "3CC182596C2CEF99"
 				type: "item"
 				item: "chickens:breeder"
 			}]
@@ -51,6 +61,11 @@
 				type: "item"
 				item: "chickens:roost"
 			}]
+			rewards: [{
+				id: "1AA39118956CF64A"
+				type: "item"
+				item: "chickens:roost"
+			}]
 		}
 		{
 			x: 2.5d
@@ -60,6 +75,11 @@
 				id: "7561BD58A9466FFC"
 				type: "item"
 				item: "industrialforegoing:ore_laser_base"
+			}]
+			rewards: [{
+				id: "6138D2B854ECED74"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -71,18 +91,40 @@
 				id: "0D453FA81CE1EE4A"
 				type: "item"
 				item: "industrialforegoing:laser_drill"
+				count: 12L
+			}]
+			rewards: [{
+				id: "0765E3E394B0768A"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
 			x: 5.5d
 			y: -4.0d
 			subtitle: "It is a block breaker"
-			description: ["you can use it to automate the generation of cobblestone"]
+			description: ["   You can use it to automate the generation of cobblestone"]
 			id: "17035DD7442FF944"
 			tasks: [{
 				id: "0384FBA3EF3353F2"
 				type: "item"
-				item: "miniutilities:mechanical_miner"
+				item: "engineersdecor:small_block_breaker"
+			}]
+			rewards: [{
+				id: "0C82A2577F253FB6"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.5d
+			dependencies: ["17035DD7442FF944"]
+			id: "45F08D2AC9E32FBF"
+			tasks: [{
+				id: "1DD76728A7B55DB7"
+				type: "item"
+				item: "engineersdecor:factory_hopper"
 			}]
 		}
 	]
